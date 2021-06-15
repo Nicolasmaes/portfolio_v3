@@ -16,6 +16,12 @@
             <a href="about.php">à propos de moi</a>
             <a href="contact.php">contact</a>
         </menu>
+        <div id="menumobile">
+            <a href="projects.php">projets</a>
+            <a href="../assets/files/cvNicolasMaes.pdf">CV</a>
+            <a href="about.php">à propos de moi</a>
+            <a href="contact.php">contact</a>
+        </div>
     </nav>
 </body>
 </html>
