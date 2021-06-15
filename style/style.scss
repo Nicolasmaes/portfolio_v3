@@ -1,0 +1,21 @@
+@font-face 
+{
+    font-family: "didot";
+    src: url(fonts/NunitoSans-Regular.ttf),
+        url(fonts/NunitoSans-Bold.ttf);
+}
+*{
+    border: 1px solid grey;
+}
+nav{
+    background-color: white;
+    inset:10%;
+}
+body{
+    background-color: #00ffff;
+}
+footer{
+    display: flex;
+    background-color:white;
+    justify-content: center;
+}
