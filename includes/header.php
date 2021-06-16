@@ -8,20 +8,23 @@
     <title>Nicolas Maës</title>
 </head>
 <body>
-    <nav>
+    <header>
         <a href="index.php"><img src="../assets/icon_nm.svg" alt="logo du site"></a>
         <menu>
             <a href="projects.php">projets</a>
-            <a href="../assets/files/cvNicolasMaes.pdf">CV</a>
+            <a href="cv.php">CV</a>
             <a href="about.php">à propos de moi</a>
             <a href="contact.php">contact</a>
         </menu>
+        <div id="hamb_menu_btn">
+            <div class="barre" id='barre1'></div>
+            <div class="barre" id='barre2'></div>
+            <div class="barre" id='barre3'></div>
+        </div>
         <div id="menumobile">
             <a href="projects.php">projets</a>
             <a href="../assets/files/cvNicolasMaes.pdf">CV</a>
             <a href="about.php">à propos de moi</a>
             <a href="contact.php">contact</a>
         </div>
-    </nav>
-</body>
-</html>
+    </header>
