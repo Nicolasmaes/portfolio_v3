@@ -1,0 +1,346 @@
+@font-face {
+  font-family: "didot";
+  src: url(../assets/fonts/didot/didot-bold-italic.ttf), url(../assets/fonts/didot/didot-lt-std-bold.otf), url(../assets/fonts/didot/didot-lt-std-italic.otf), url(../assets/fonts/didot/didot-medium.ttf), url(../assets/fonts/didot/didot-regular.ttf);
+  font-family: "avenir";
+  src: url(../assets/fonts/avenir-next/avenirNextLTPro-bold.otf), url(../assets/fonts/avenir-next/avenirNextLTPro-it.otf), url(../assets/fonts/avenir-next/avenirNextLTPro-regular.otf);
+}
+* {
+  border: 1px solid grey;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+}
+
+header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+header img {
+  height: 3rem;
+}
+
+menu {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "avenir";
+  font-size: 1.5rem;
+}
+menu a {
+  color: #1e4b4b;
+}
+
+body {
+  background-color: #dbf0f0;
+}
+
+footer {
+  position: fixed;
+  display: flex;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+footer img {
+  height: 2rem;
+  -webkit-clip-path: ellipse(130px 140px at 10% 20%);
+          clip-path: ellipse(130px 140px at 10% 20%);
+}
+footer button {
+  position: absolute;
+  right: 1rem;
+  align-self: center;
+  color: #1e4b4b;
+}
+
+.containervideo {
+  position: absolute;
+  top: 500px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 380px;
+  height: 220px;
+}
+.containervideo video {
+  width: 100%;
+  height: auto;
+}
+.containervideo .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 110px;
+  background: white;
+  font-size: 3.5rem;
+  font-family: "avenir";
+  mix-blend-mode: screen;
+  letter-spacing: 7px;
+  font-weight: bolder;
+}
+
+h1 {
+  font-family: "didot";
+  color: #1e4b4b;
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 2rem;
+}
+
+#menumobile {
+  display: none;
+}
+
+#hamb_menu_btn {
+  display: none;
+}
+
+.main_container {
+  display: flex;
+  justify-content: center;
+  color: #1e4b4b;
+}
+.main_container .options {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 2px;
+}
+.main_container .options button {
+  margin: 2px;
+  color: #1e4b4b;
+  font-size: 1.5rem;
+  font-family: "avenir";
+  padding: 0 1rem;
+}
+.main_container .options button img {
+  width: 1rem;
+  height: auto;
+}
+.main_container table {
+  border-collapse: collapse;
+  width: 30%;
+  font-family: "avenir";
+}
+.main_container table th {
+  padding: 0 2px;
+  font-size: 1.5rem;
+  border: 1px solid #1e4b4b;
+}
+.main_container table td {
+  padding: 3px;
+  border: 1px solid #1e4b4b;
+  color: #1e4b4b;
+}
+
+.containerproject {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.25fr 1fr 1fr 0.25fr 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "project_technologies project_begin project_end" "project_technologies project_specs project_specs" "project_coworkers screenshots_gallery project_context" "sources screenshots_gallery project_context" "project_link_github project_link_website dossier_de_conception";
+  text-align: center;
+  width: 80%;
+  height: 40rem;
+  margin: 10px auto;
+}
+.containerproject div {
+  border: 1px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project_begin {
+  grid-area: project_begin;
+}
+
+.project_end {
+  grid-area: project_end;
+}
+
+.project_technologies {
+  grid-area: project_technologies;
+}
+
+.dossier_de_conception {
+  grid-area: dossier_de_conception;
+}
+
+.project_link_website {
+  grid-area: project_link_website;
+}
+
+.project_link_github {
+  grid-area: project_link_github;
+}
+
+.project_coworkers {
+  grid-area: project_coworkers;
+}
+
+.sources {
+  grid-area: sources;
+}
+
+.screenshots_gallery {
+  grid-area: screenshots_gallery;
+}
+
+.project_context {
+  grid-area: project_context;
+}
+
+.project_specs {
+  display: grid;
+  position: relative;
+  grid-template-columns: 2.5fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: ". prototype";
+  grid-area: project_specs;
+}
+.project_specs .prototype {
+  grid-area: prototype;
+  width: 30%;
+  height: 70%;
+  position: absolute;
+  right: 3rem;
+}
+
+.container_projects {
+  display: grid;
+  grid-template-columns: 1fr 0.1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  width: 80%;
+  margin: 10px auto;
+  grid-template-areas: "project_thumbnail_next arrow project_title_next" "project_title_08 arrow project_thumbnail_08" "project_thumbnail_07 arrow project_title_07" "project_title_06 arrow project_thumbnail_06" "project_thumbnail_05 arrow project_title_05" "project_title_04 arrow project_thumbnail_04" "project_thumbnail_03 arrow project_title_03" "project_title_02 arrow project_thumbnail_02" "project_thumbnail_01 arrow project_title_01";
+}
+.container_projects div {
+  height: 16rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "avenir";
+  font-weight: bolder;
+  font-size: 2.5rem;
+  color: #1e4b4b;
+}
+.container_projects div img {
+  width: 16rem;
+}
+
+.project_thumbnail_next {
+  grid-area: project_thumbnail_next;
+}
+
+.arrow {
+  grid-area: arrow;
+}
+
+.project_title_08 {
+  grid-area: project_title_08;
+}
+
+.project_title_07 {
+  grid-area: project_title_07;
+}
+
+.project_title_06 {
+  grid-area: project_title_06;
+}
+
+.project_title_05 {
+  grid-area: project_title_05;
+}
+
+.project_title_04 {
+  grid-area: project_title_04;
+}
+
+.project_title_03 {
+  grid-area: project_title_03;
+}
+
+.project_title_02 {
+  grid-area: project_title_02;
+}
+
+.project_title_01 {
+  grid-area: project_title_01;
+}
+
+.project_title_next {
+  grid-area: project_title_next;
+}
+
+.project_thumbnail_08 {
+  grid-area: project_thumbnail_08;
+}
+
+.project_thumbnail_07 {
+  grid-area: project_thumbnail_07;
+}
+
+.project_thumbnail_06 {
+  grid-area: project_thumbnail_06;
+}
+
+.project_thumbnail_05 {
+  grid-area: project_thumbnail_05;
+}
+
+.project_thumbnail_04 {
+  grid-area: project_thumbnail_04;
+}
+
+.project_thumbnail_03 {
+  grid-area: project_thumbnail_03;
+}
+
+.project_thumbnail_02 {
+  grid-area: project_thumbnail_02;
+}
+
+.project_thumbnail_01 {
+  grid-area: project_thumbnail_01;
+}
+
+.container_cv {
+  display: flex;
+  justify-content: center;
+}
+.container_cv embed {
+  width: 50%;
+  height: 800px;
+  margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  #menumobile {
+    display: flex;
+    font-family: "avenir";
+    font-size: 1rem;
+  }
+  #menumobile a {
+    color: #1e4b4b;
+  }
+
+  menu {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

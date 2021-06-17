@@ -1,0 +1,14 @@
+if (isset($_POST['user_name'])&&!empty($_POST['user_name'])&&isset($_POST['user_mail'])&&!empty($_POST['user_mail'])&&isset($_POST['user_password'])&&!empty($_POST['user_password'])&&isset($_POST['user_confirmation'])&&!empty($_POST['user_confirmation'])) {
+
+project_id
+project_title
+project_begin	
+project_end	
+project_thumbnail	
+project_context	
+project_specs	
+project_prototype	
+project_link_website	
+project_link_github
+
+$_POST est une super globale
