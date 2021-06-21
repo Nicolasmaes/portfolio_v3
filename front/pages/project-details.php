@@ -22,8 +22,8 @@ session_start();
 <h1>nicolasmaes.fr</h1>
 
 <div class="containerproject">
-    <div class="project_begin"><input type="date" name="" id=""></div>
-    <div class="project_end"><input type="date" name="" id=""></div>
+    <div class="project_begin">date of beginning</div>
+    <div class="project_end">date of ending</div>
     <div class="project_technologies">project_technologies</div>
     <div class="dossier_de_conception">dossier_de_conception</div>
     <div class="project_link_website">project_link_website</div>
@@ -33,8 +33,8 @@ session_start();
     <div class="screenshots_gallery">screenshots_gallery</div>
     <div class="project_context">project_context</div>
     <div class="project_specs">
-        project_specs
-        <div class="prototype">prototype</div>
+        <p>project_specs</p>
+        <div class="prototype" id='prototype'>prototype</div>
     </div>
 
 
