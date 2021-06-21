@@ -1,0 +1,3 @@
+Mon premier site codé tout seul. Assez simple mais j'en suis plutôt fier pour mon niveau de l'époque. Il m'a été bien utile pour intégret l'Access Code School !
+
+utilisation de Mailchimp pour la gestion de la newsletter, Pouvoir passer du français à l'anglais, Ecrire un e-mail depuis le site, avoir un CV téléchargeable depuis le site.

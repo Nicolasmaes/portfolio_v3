@@ -10,8 +10,8 @@
             <fieldset>
                 <legend>Formulaire</legend>
                 <div>
-                    <label for="user_name">Username</label>
-                    <input id="user_name" name="user_name"></input>
+                    <label for="username">Username</label>
+                    <input id="username" name="username"></input>
                 </div>
                 <div>
                     <label for="user_mail">E-mail</label>

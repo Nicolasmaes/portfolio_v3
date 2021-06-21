@@ -1,9 +1,9 @@
 <?php
 require_once('db_connect.php'); // la liaison à la base de données se fait après les vérifications
-if (isset($_POST['user_name'])&&!empty($_POST['user_name'])&&isset($_POST['user_mail'])&&!empty($_POST['user_mail'])&&isset($_POST['user_password'])&&!empty($_POST['user_password'])&&isset($_POST['user_confirmation'])&&!empty($_POST['user_confirmation'])) {
+if (isset($_POST['username'])&&!empty($_POST['username'])&&isset($_POST['user_mail'])&&!empty($_POST['user_mail'])&&isset($_POST['user_password'])&&!empty($_POST['user_password'])&&isset($_POST['user_confirmation'])&&!empty($_POST['user_confirmation'])) {
       
       if ($_POST['user_password'] === $_POST['user_confirmation']) {
-            $username = strip_tags($_POST['user_name']);
+            $username = strip_tags($_POST['username']);
             $email = strip_tags($_POST['user_mail']);
             $password = strip_tags($_POST['user_password']);
             $confirmation = strip_tags($_POST['user_confirmation']);

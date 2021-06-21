@@ -26,7 +26,7 @@ if ($_SESSION['user_name']) {
     <title>Add a project</title>
 </head>
 <body>
-    <form action="project-edit-form-handler.php" method="post">
+<form action="add-form-handler.php" method="post">
         <div>
             <label for="input_title">Title</label>
             <input type="text" id="input_title" name="project_title">
@@ -44,8 +44,32 @@ if ($_SESSION['user_name']) {
             <textarea id="input_context" cols="30" rows="10" name="project_context"></textarea>
         </div>
         <div>
-            <label for="input_specs">Specifications</label>
+            <label for="input_specs">Specifications fonctionnelles</label>
             <textarea id="input_context" cols="30" rows="10" name="project_specs"></textarea>
+        </div>
+        <div>
+            <label for="input_coworkers">Coworkers</label>
+            <textarea id="input_coworkers" cols="30" rows="10" name="project_coworkers"></textarea>
+        </div>
+        <div>
+            <label for="input_techs">Technologies</label>
+            <textarea id="input_techs" cols="30" rows="10" name="project_technologies"></textarea>
+        </div>
+        <div>
+            <label for="input_proto">Prototype</label>
+            <input type='file' id="input_proto" name="project_proto">
+        </div>
+        <div>
+            <label for="input_picture">Picture</label>
+            <input type="file" id="input_picture" name="project_picture">
+        </div>
+        <div>
+            <label for="input_design_brief">Design brief</label>
+            <input type='file' id="input_design_brief" name="project_design_file">
+        </div>
+        <div>
+            <label for="input_sources">Sources</label>
+            <input type='file' id="input_sources" name="project_sources">
         </div>
         <div>
             <label for="input_link_website">Website</label>
@@ -57,7 +81,6 @@ if ($_SESSION['user_name']) {
         </div>
         <div class="button">
             <button type="reset">Reinitialize</button><br>
-            <input type="hidden" name ="project_id" value="<?=$result['project_id']?>">
             <input type="submit" id="submit" value="Send"></input>
             <!-- <input type="submit"> autre manière de créer un bouton -->
         </div>

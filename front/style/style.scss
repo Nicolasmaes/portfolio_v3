@@ -9,7 +9,7 @@
 $primary-color:#1e4b4b;
 $second-color: #dbf0f0;
 *{
-    border: 1px solid grey;
+/*     border: 1px solid grey; */
     text-decoration: none;
     margin:0;
     padding: 0;
@@ -135,6 +135,11 @@ h1{
         }
     }
 }
+.centering{
+    text-align: center;
+    font-family: 'avenir';
+    color: $primary-color;
+}
 .containerproject {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -157,6 +162,12 @@ h1{
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 25px;
+        color: $primary-color;
+        font-family: 'avenir';
+        label{
+            margin-right: 5px;
+        }
     }
   }
   
@@ -193,7 +204,6 @@ h1{
     .prototype { grid-area: prototype; 
         width: 30%;
         height: 70%;
-        position: absolute;
         right: 3rem;
   }
 }

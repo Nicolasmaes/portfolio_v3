@@ -2,9 +2,8 @@
 <h1>Back-office</h1>
 <div class="main_container">
     <div class="options">
-        <button><img src="../assets/icons/add.png" alt="logo edit"></button>
-        <button><img src="../assets/icons/read.png" alt="logo edit"></button>
-        <button><img src="../assets/icons/edit.png" alt="logo edit"></button>
+        <a href="../../back/add-form.php"><button><img src="../assets/icons/add.png" alt="logo edit"></button></a>
+        <a href="../../back/project-edit.php"><button><img src="../assets/icons/edit.png" alt="logo edit"></button></a>
         <button><img src="../assets/icons/delete.png" alt="logo edit"></button>
         <button><img src="../assets/icons/hide.png" alt="logo edit"></button>
     </div>

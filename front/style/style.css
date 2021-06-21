@@ -5,7 +5,7 @@
   src: url(../assets/fonts/avenir-next/avenirNextLTPro-bold.otf), url(../assets/fonts/avenir-next/avenirNextLTPro-it.otf), url(../assets/fonts/avenir-next/avenirNextLTPro-regular.otf);
 }
 * {
-  border: 1px solid grey;
+  /*     border: 1px solid grey; */
   text-decoration: none;
   margin: 0;
   padding: 0;
@@ -142,6 +142,12 @@ h1 {
   color: #1e4b4b;
 }
 
+.centering {
+  text-align: center;
+  font-family: "avenir";
+  color: #1e4b4b;
+}
+
 .containerproject {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -160,6 +166,12 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 25px;
+  color: #1e4b4b;
+  font-family: "avenir";
+}
+.containerproject div label {
+  margin-right: 5px;
 }
 
 .project_begin {
@@ -216,7 +228,6 @@ h1 {
   grid-area: prototype;
   width: 30%;
   height: 70%;
-  position: absolute;
   right: 3rem;
 }
 

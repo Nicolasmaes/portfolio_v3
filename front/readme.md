@@ -1,5 +1,6 @@
 entreprises postulées pour le stage
 Hélix, ne prned pas de stagiaire
+Domaine du goût, réponse négative reçue rapidement, je ne correspond pas totalement à ce qu'ils cherchent.
 
 entreprises postulées pour le bac+3
 Sensy, candidature envoyée le 17.06.21
