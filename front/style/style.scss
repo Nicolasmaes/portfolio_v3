@@ -9,7 +9,7 @@
 $primary-color:#1e4b4b;
 $second-color: #dbf0f0;
 *{
-/*     border: 1px solid grey; */
+    border: 1px solid grey;
     text-decoration: none;
     margin:0;
     padding: 0;
@@ -31,8 +31,21 @@ menu{
     align-items: center;
     font-family: 'avenir';
     font-size: 1.5rem;
-    a{
-        color: $primary-color;
+    div{
+        display: flex;
+        align-items: center;
+        .balises{
+            opacity: 0;
+            width: 1rem;
+            transition: 0.5s;
+        }
+        &:hover .balises{
+            opacity: 1;
+            transition: 0.5s;
+        }
+        a{
+            color: $primary-color;
+        }
     }
 }
 body{
@@ -139,6 +152,7 @@ h1{
     text-align: center;
     font-family: 'avenir';
     color: $primary-color;
+    margin-top: 1rem;
 }
 .containerproject {
     display: grid;
@@ -158,7 +172,8 @@ h1{
     height: 40rem;
     margin: 10px auto;
     div{
-        border: 1px solid grey;
+        border: 1px solid $primary-color;
+        border-radius: 5px;
         display: flex;
         justify-content: center;
         align-items: center;

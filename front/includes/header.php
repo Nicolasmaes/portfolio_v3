@@ -9,12 +9,28 @@
 </head>
 <body>
     <header>
-        <a href="index.php"><img src="../assets/icon_nm.svg" alt="logo du site"></a>
+        <a href="index.php"><img src="../assets/icons/icon_nm.svg" alt="logo du site"></a>
         <menu>
-            <a href="projects.php">projets</a>
-            <a href="cv.php">CV</a>
-            <a href="about.php">à propos de moi</a>
-            <a href="contact.php">contact</a>
+            <div>
+                <img src="../assets/icons/opentag.svg" alt="" class='balises'>
+                <a href="projects.php">projets</a>
+                <img src="../assets/icons/opentag3.svg" alt="" class='balises'>
+            </div>
+            <div>
+                <img src="../assets/icons/opentag.svg" alt="" class='balises'>
+                <a href="cv.php">cv</a>
+                <img src="../assets/icons/opentag3.svg" alt="" class='balises'>
+            </div>
+            <div>
+                <img src="../assets/icons/opentag.svg" alt="" class='balises'>
+                <a href="about.php">à propos de moi</a>
+                <img src="../assets/icons/opentag3.svg" alt="" class='balises'>
+            </div>
+            <div>
+                <img src="../assets/icons/opentag.svg" alt="" class='balises'>
+                <a href="contact.php">contact</a>
+                <img src="../assets/icons/opentag3.svg" alt="" class='balises'>
+            </div>
         </menu>
         <div id="hamb_menu_btn">
             <div class="barre" id='barre1'></div>

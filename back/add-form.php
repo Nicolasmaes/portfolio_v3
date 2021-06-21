@@ -84,7 +84,7 @@
             </div>
             <div class="project_specs">
                 <label for="input_specs">Specs</label>
-                <textarea id="input_context" cols="30" rows="10" name="project_specs"></textarea>
+                <textarea id="input_context" cols="20" rows="5" name="project_specs"></textarea>
                 <div class="prototype">
                     <label for="input_proto">Prototype</label>
                     <input type='file' id="input_proto" name="project_proto">

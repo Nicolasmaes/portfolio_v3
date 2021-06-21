@@ -2,7 +2,7 @@
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="18.102px" height="29.235px" viewBox="120.867 4.764 18.102 29.235" enable-background="new 120.867 4.764 18.102 29.235"
+	 width="33.682px" height="38.764px" viewBox="0 0.001 33.682 38.764" enable-background="new 0 0.001 33.682 38.764"
 	 xml:space="preserve">
 <g>
 	
@@ -44,11 +44,11 @@
 	<polygon display="none" fill="#1E4B4B" points="66.384,35.732 68.757,38.104 68.757,33.36 	"/>
 	<polygon display="none" fill="#1E4B4B" points="80.117,22.146 80.117,0.177 68.757,0.177 68.757,22.044 68.757,22.044 
 		68.757,33.36 68.757,38.104 80.117,38.104 80.117,38.066 	"/>
-	<polygon display="none" fill="#1E4B4B" points="18.103,8.406 14.461,4.764 0,19.225 0.157,19.382 0,19.54 14.461,34 18.103,30.358 
-		7.126,19.382 	"/>
-	<polygon fill="#1E4B4B" points="138.969,19.225 124.509,4.764 120.867,8.406 131.843,19.382 120.867,30.358 124.509,34 
-		138.969,19.54 138.813,19.382 	"/>
+	<polygon fill="#1E4B4B" points="18.103,8.406 14.461,4.764 0,19.225 0.157,19.382 0,19.54 14.461,34 18.103,30.358 7.126,19.382 	
+		"/>
+	<polygon display="none" fill="#1E4B4B" points="138.969,19.225 124.509,4.764 120.867,8.406 131.843,19.382 120.867,30.358 
+		124.509,34 138.969,19.54 138.813,19.382 	"/>
 	
-		<rect x="8.287" y="16.428" transform="matrix(-0.1736 0.9848 -0.9848 -0.1736 51.2996 -4.2823)" display="none" fill="#878582" width="38.319" height="5.908"/>
+		<rect x="8.287" y="16.428" transform="matrix(-0.1736 0.9848 -0.9848 -0.1736 51.2996 -4.2823)" fill="#878582" width="38.319" height="5.908"/>
 </g>
 </svg>

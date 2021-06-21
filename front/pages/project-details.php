@@ -33,8 +33,9 @@ session_start();
     <div class="screenshots_gallery">screenshots_gallery</div>
     <div class="project_context">project_context</div>
     <div class="project_specs">
-    <?= $result['project_specs'] ?><div class="prototype">prototype</div>
-</div>
+        project_specs
+        <div class="prototype">prototype</div>
+    </div>
 
 
 <?php include "../includes/footer.php"; ?>

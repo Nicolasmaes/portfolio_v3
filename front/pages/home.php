@@ -9,7 +9,7 @@
     </div>
     <table>
         <tr><th></th><th>favicon</th><th>nom du projet</th><th>vues</th><th>date d'ajout</th></tr>
-        <tr><td><input type="checkbox" name="" id=""></td><td></td><td><a href="project-details.php">nicolasmaes.fr</a></td><td></td>
+        <tr><td><input type="checkbox" name="" id=""></td><td></td><td><a href="project-details.php">nicolasmaes.fr</a></td><td></td><td></td>
         <tr><td><input type="checkbox" name="" id=""></td><td></td><td></td><td></td><td></td>
         <tr><td><input type="checkbox" name="" id=""></td><td></td><td></td><td></td><td></td>
         <tr><td><input type="checkbox" name="" id=""></td><td></td><td></td><td></td><td></td>
