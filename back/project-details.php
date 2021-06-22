@@ -28,7 +28,7 @@ if ($_SESSION['user_name']) {
 </head>
 <body>
     <?= $result['project_title'] ?>
-    <img src="assets/<?= $result['project_picture']; ?>">
+    <img src="../assets/thumbnails/<?= $result['project_picture']; ?>">
     <?= $result['project_context'] ?>
     <?= $result['project_specs'] ?>
     

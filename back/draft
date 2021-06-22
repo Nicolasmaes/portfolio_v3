@@ -12,3 +12,27 @@ project_link_website
 project_link_github
 
 $_POST est une super globale
+
+
+/*             $query->bindValue(':project_proto', $proto, PDO::PARAM_STR);
+            $query->bindValue(':project_design_file', $design_file, PDO::PARAM_STR);
+            $query->bindValue(':project_sources', $sources, PDO::PARAM_STR); */
+
+             $sql = "INSERT INTO `projects`(`project_title`,`project_picture`,`project_begin`	
+            ,`project_end`,`project_context`,`project_specs`,`project_link_website`,`project_link_github`,`project_coworkers`,`project_technologies`/* ,`project_prototype`,`project_design_file`,`project_sources` */)VALUES(:project_title,:project_picture,:project_begin,:project_end,:project_context,:project_specs,:project_link_website,:project_link_github,:project_coworkers,:project_technologies/* ,:project_proto,:project_design_file,:project_sources) */";
+
+            $query = $db->prepare($sql);
+            $query->bindValue(':project_title', $title, PDO::PARAM_STR);
+            $query->bindValue(':project_picture', $picture, PDO::PARAM_STR);
+            $query->bindValue(':project_begin', $begin, PDO::PARAM_STR);
+            $query->bindValue(':project_end', $end, PDO::PARAM_STR);
+            $query->bindValue(':project_context', $context, PDO::PARAM_STR);
+            $query->bindValue(':project_specs', $specs, PDO::PARAM_STR);
+            $query->bindValue(':project_link_website', $website_link, PDO::PARAM_STR);
+            $query->bindValue(':project_link_github', $github_link, PDO::PARAM_STR);
+            $query->bindValue(':project_coworkers', $coworkers, PDO::PARAM_STR);
+            $query->bindValue(':project_technologies', $technologies, PDO::PARAM_STR);
+/*             $query->bindValue(':project_proto', $proto, PDO::PARAM_STR);
+            $query->bindValue(':project_design_file', $design_file, PDO::PARAM_STR);
+            $query->bindValue(':project_sources', $sources, PDO::PARAM_STR); */
+            $query->execute();

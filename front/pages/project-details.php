@@ -1,11 +1,9 @@
 <?php 
-
 include "../includes/header.php";
-
 session_start();
-
+if ($_SESSION['user_name']) {
     if (isset($_GET['id']) && !empty($_GET['id'])) {
-        require_once('../../back/db_connect.php');
+        require_once('db_connect.php');
         $id = strip_tags($_GET['id']);
         $sql = 'SELECT * FROM `projects` WHERE `project_id`=:id';
         $query = $db->prepare($sql);
@@ -15,7 +13,9 @@ session_start();
     } else {
         echo 'missing id';
     }
-
+} else {
+    echo 'Please log in.';
+}
 ?>
 
 

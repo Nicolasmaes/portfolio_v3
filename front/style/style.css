@@ -1,11 +1,11 @@
 @font-face {
   font-family: "didot";
-  src: url(../assets/fonts/didot/didot-bold-italic.ttf), url(../assets/fonts/didot/didot-lt-std-bold.otf), url(../assets/fonts/didot/didot-lt-std-italic.otf), url(../assets/fonts/didot/didot-medium.ttf), url(../assets/fonts/didot/didot-regular.ttf);
+  src: url(../../assets/fonts/didot/didot-bold-italic.ttf), url(../../assets/fonts/didot/didot-lt-std-bold.otf), url(../../assets/fonts/didot/didot-lt-std-italic.otf), url(../../assets/fonts/didot/didot-medium.ttf), url(../../assets/fonts/didot/didot-regular.ttf);
   font-family: "avenir";
-  src: url(../assets/fonts/avenir-next/avenirNextLTPro-bold.otf), url(../assets/fonts/avenir-next/avenirNextLTPro-it.otf), url(../assets/fonts/avenir-next/avenirNextLTPro-regular.otf);
+  src: url(../../assets/fonts/avenir-next/avenirNextLTPro-bold.otf), url(../../assets/fonts/avenir-next/avenirNextLTPro-it.otf), url(../../assets/fonts/avenir-next/avenirNextLTPro-regular.otf);
 }
 * {
-  /*     border: 1px solid grey; */
+  border: 1px solid grey;
   text-decoration: none;
   margin: 0;
   padding: 0;
@@ -13,7 +13,7 @@
 }
 
 header {
-  background-color: white;
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   padding: 1rem;
@@ -21,6 +21,8 @@ header {
 }
 header img {
   height: 3rem;
+  display: flex;
+  text-align: center;
 }
 
 menu {
@@ -71,14 +73,15 @@ footer {
 }
 footer img {
   height: 2rem;
+  display: flex;
+  text-align: center;
 }
 footer button {
   color: #1e4b4b;
   display: flex;
   align-items: center;
   position: fixed;
-  right: 1rem;
-  bottom: 0.75rem;
+  right: 5px;
 }
 
 .containervideo {
@@ -100,13 +103,16 @@ footer button {
   width: 100%;
   height: 100%;
   text-align: center;
-  line-height: 200px;
+  line-height: 140px;
   background: white;
   font-size: 6rem;
   font-family: "avenir";
   mix-blend-mode: screen;
   letter-spacing: 7px;
   font-weight: bolder;
+}
+.containervideo .text span {
+  font-size: 2rem;
 }
 
 h1 {
@@ -125,6 +131,19 @@ h1 {
   display: none;
 }
 
+.login_form {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.login_form div {
+  padding: 5px;
+}
+.login_form div input, .login_form div button {
+  padding: 2px;
+}
+
 .main_container {
   display: flex;
   justify-content: center;
@@ -137,11 +156,10 @@ h1 {
   padding: 2px;
 }
 .main_container .options button {
-  margin: 2px;
-  color: #1e4b4b;
-  font-size: 1.5rem;
+  margin: 10px;
   font-family: "avenir";
-  padding: 0 1rem;
+  padding: 0.25rem 1rem;
+  border-radius: 5px;
 }
 .main_container .options button img {
   width: 1rem;
@@ -173,11 +191,11 @@ h1 {
 .containerproject {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.25fr 1fr 1fr 0.5fr 0.5fr;
+  grid-template-rows: 0.25fr 1fr 1fr 0.5fr 0.5fr 0.5fr;
   grid-auto-rows: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "project_technologies project_begin project_end" "project_technologies project_specs project_specs" "project_coworkers screenshots_gallery project_context" "sources screenshots_gallery project_context" "project_link_github project_link_website dossier_de_conception";
+  grid-template-areas: "project_technologies project_begin project_end" "project_technologies project_specs project_specs" "project_coworkers screenshots_gallery project_context" "sources screenshots_gallery project_context" "project_link_github project_link_website dossier_de_conception" ". button .";
   text-align: center;
   width: 80%;
   height: 40rem;
@@ -190,6 +208,7 @@ h1 {
   justify-content: center;
   align-items: center;
   margin: 10px;
+  padding: 10px 0;
   color: #1e4b4b;
   font-family: "avenir";
 }
@@ -257,6 +276,14 @@ h1 {
   height: 70%;
   right: 1rem;
   position: absolute;
+}
+
+.button {
+  grid-area: button;
+}
+.button button, .button input {
+  padding: 0 1rem;
+  margin: 0 1rem;
 }
 
 .container_projects {
@@ -370,23 +397,40 @@ h1 {
 }
 
 @media screen and (max-width: 768px) {
-  #hamb_menu_btn {
-    display: flex;
-    flex-direction: column;
-  }
-  #hamb_menu_btn .barre {
-    background-color: #1e4b4b;
-    width: 50px;
-    height: 10px;
-  }
-
-  #menumobile a {
-    color: #1e4b4b;
-    font-family: "avenir";
-    font-size: 1rem;
-  }
-
   menu {
     display: none;
   }
+
+  .containervideo {
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 10rem;
+    background-image: url("../../assets/files/waves.png");
+  }
+  .containervideo video {
+    display: none;
+  }
+  .containervideo .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 25px;
+    background: white;
+    font-size: 1.8rem;
+    font-family: "avenir";
+    mix-blend-mode: screen;
+    letter-spacing: 7px;
+    font-weight: bolder;
+  }
+  .containervideo .text span {
+    font-size: 1rem;
+  }
+
+  /* ferme la media queries */
 }/*# sourceMappingURL=style.css.map */

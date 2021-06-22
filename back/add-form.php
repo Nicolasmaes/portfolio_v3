@@ -1,6 +1,6 @@
 <?php
     session_start();
-    if ($_SESSION['username']) {
+    if ($_SESSION['user_name']) {
     require_once('db_connect.php');
     }
 ?>
@@ -15,12 +15,28 @@
 </head>
 <body>
     <header>
-        <a href="../front/index.php"><img src="../front/assets/icon_nm.svg" alt="logo du site"></a>
+        <a href="../front/index.php"><img src="../assets/icons/icon_nm.svg" alt="logo du site"></a>
         <menu>
-            <a href="../front/pages/projects.php">projets</a>
-            <a href="../front/pages/cv.php">CV</a>
-            <a href="../front/pages/about.php">à propos de moi</a>
-            <a href="../front/pages/contact.php">contact</a>
+            <div>
+                <img src="../assets/icons/opentag.svg" alt="" class='balise1'>
+                <a href="projects.php">projets</a>
+                <img src="../assets/icons/closingtag.svg" alt="" class='balise2'>
+            </div>
+            <div>
+                <img src="../assets/icons/opentag.svg" alt="" class='balise1'>
+                <a href="cv.php">cv</a>
+                <img src="../assets/icons/closingtag.svg" alt="" class='balise2'>
+            </div>
+            <div>
+                <img src="../assets/icons/opentag.svg" alt="" class='balise1'>
+                <a href="about.php">à propos de moi</a>
+                <img src="../assets/icons/closingtag.svg" alt="" class='balise2'>
+            </div>
+            <div>
+                <img src="../assets/icons/opentag.svg" alt="" class='balise1'>
+                <a href="contact.php">contact</a>
+                <img src="../assets/icons/closingtag.svg" alt="" class='balise2'>
+            </div>
         </menu>
         <div id="hamb_menu_btn">
             <div class="barre" id='barre1'></div>
@@ -91,14 +107,14 @@
                 </div>
             </div>
             <div class="button">
-                <button type="reset">Reinitialize</button><br>
+                <button type="reset">Reset</button><br>
                 <input type="submit" id="submit" value="Send"></input>
                 <!-- <input type="submit"> autre manière de créer un bouton -->
             </div>
         </div>
     </form>
     <footer>
-        <a href="index.php"><img src="../front/assets/icon_nm.svg" alt="logo du site"></a>
+        <a href="index.php"><img src="../assets/icons/icon_nm.svg" alt="logo du site"></a>
         <a href="login-form.php"><button>connexion</button></a>
     </footer>
     <script src="../front/script/main.js"></script>

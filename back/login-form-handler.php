@@ -15,8 +15,8 @@ if(!$result){
     }else{
         session_start();
         $_SESSION['id'] = $result['id'];
-        $_SESSION['user_name'] = $result['username'];
+        $_SESSION['username'] = $result['username'];
         $_SESSION['success'] = 'ACCESS GRANTED';
-        header ('Location:../front/pages/home.php');
+        header ('Location:home.php');
     }
 }
