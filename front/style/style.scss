@@ -147,7 +147,7 @@ h1{
         flex-direction: column;
         padding: 2px;
         button{
-            margin: 10px;
+            /* margin: 10px; */
             font-family: 'avenir';
             padding: 0.25rem 1rem;
             border-radius: 5px;
@@ -168,9 +168,14 @@ h1{
             border: 1px solid $primary-color;
         }
         td{
-            padding: 3px;
+            /* padding: 3px; */
             border: 1px solid $primary-color;
             color:$primary-color;
+            text-align: center;
+            img{
+                width: 3rem;
+                margin: auto;
+            }
         }
     }
 }
@@ -266,13 +271,13 @@ h1{
 .container_projects {
     display: grid;
     grid-template-columns: 1fr 0.1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     width: 80%;
     margin: 10px auto;
     grid-template-areas:
-      "project_thumbnail_next arrow project_title_next"
+      "project_thumbnail_next . project_title_next"
       "project_title_06 arrow project_thumbnail_06"
       "project_thumbnail_05 arrow project_title_05"
       "project_title_04 arrow project_thumbnail_04"

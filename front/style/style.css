@@ -156,7 +156,7 @@ h1 {
   padding: 2px;
 }
 .main_container .options button {
-  margin: 10px;
+  /* margin: 10px; */
   font-family: "avenir";
   padding: 0.25rem 1rem;
   border-radius: 5px;
@@ -176,9 +176,14 @@ h1 {
   border: 1px solid #1e4b4b;
 }
 .main_container table td {
-  padding: 3px;
+  /* padding: 3px; */
   border: 1px solid #1e4b4b;
   color: #1e4b4b;
+  text-align: center;
+}
+.main_container table td img {
+  width: 3rem;
+  margin: auto;
 }
 
 .centering {
@@ -289,12 +294,12 @@ h1 {
 .container_projects {
   display: grid;
   grid-template-columns: 1fr 0.1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   width: 80%;
   margin: 10px auto;
-  grid-template-areas: "project_thumbnail_next arrow project_title_next" "project_title_06 arrow project_thumbnail_06" "project_thumbnail_05 arrow project_title_05" "project_title_04 arrow project_thumbnail_04" "project_thumbnail_03 arrow project_title_03" "project_title_02 arrow project_thumbnail_02" "project_thumbnail_01 arrow project_title_01";
+  grid-template-areas: "project_thumbnail_next . project_title_next" "project_title_06 arrow project_thumbnail_06" "project_thumbnail_05 arrow project_title_05" "project_title_04 arrow project_thumbnail_04" "project_thumbnail_03 arrow project_title_03" "project_title_02 arrow project_thumbnail_02" "project_thumbnail_01 arrow project_title_01";
 }
 .container_projects div {
   height: 16rem;

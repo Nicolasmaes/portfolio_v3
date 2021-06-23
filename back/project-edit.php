@@ -1,6 +1,6 @@
 <?php
     session_start();
-    if ($_SESSION['user_name']) {
+    if ($_SESSION['username']) {
     require_once('db_connect.php');
     }
 ?>

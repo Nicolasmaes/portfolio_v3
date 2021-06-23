@@ -1,4 +1,7 @@
-<?php include "../includes/header.php"; ?>
+<?php
+include "../includes/header.php";
+session_start();
+?>
 
 <div class="containervideo">
     <video src="../../assets/files/waves.mov" autoplay loop muted></video>
