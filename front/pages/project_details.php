@@ -22,7 +22,7 @@ if ($_SESSION['user_name']) {
 <h1>nicolasmaes.fr</h1>
 
 <div class="containerproject">
-    <div class="project_begin">date of beginning</div>
+    <div class="project_begin"><?= $project['project_begin'] ?></div>
     <div class="project_end">date of ending</div>
     <div class="project_technologies">project_technologies</div>
     <div class="dossier_de_conception">dossier_de_conception</div>

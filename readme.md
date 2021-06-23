@@ -1,14 +1,26 @@
-entreprises postulées pour le stage
-Hélix, ne prned pas de stagiaire
-Domaine du goût, réponse négative reçue rapidement, je ne correspond pas totalement à ce qu'ils cherchent.
+# Entreprises postulées pour le stage
 
-entreprises postulées pour le bac+3
-Sensy, candidature envoyée le 17.06.21
+- Hélix, ne prned pas de stagiaire
+- Domaine du goût, réponse négative reçue rapidement, je ne correspond pas.
+- Atol réponse négative, pas de stagiaire
+- Catapulpe, candidature envoyée le 22.06.21
+- Akyos, candidature envoyée le 22.06.21
+- Digital Initiative, candidature envoyée le 23.06.21
 
-pour les sources, faire un fichier PDF par projet
+# A envoyer
 
-effet hover du menu, mettre les balises en opacité zero pour qu'elles prennent déjà leurs places
+- PageUp
+- BWA
 
+# Entreprises postulées pour le bac+3
 
-pour le titre de developpeur web, rediger d'ores et déjà le rapport de stage 
-se connecter à l'api de strava puis afficher ma dernière course sur ma page d'accueil
+- Sensy, candidature envoyée le 17.06.21
+
+# Idées pour le portfolio
+
+- pour les sources, faire un fichier PDF par projet
+
+# Titre de développeur web
+
+- rédiger d'ores et déjà le rapport de stage 
+- se connecter à l'api de strava puis afficher ma dernière course sur ma page d'accueil

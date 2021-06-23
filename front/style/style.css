@@ -294,7 +294,7 @@ h1 {
   grid-auto-flow: row;
   width: 80%;
   margin: 10px auto;
-  grid-template-areas: "project_thumbnail_next arrow project_title_next" "project_title_08 arrow project_thumbnail_08" "project_thumbnail_07 arrow project_title_07" "project_title_06 arrow project_thumbnail_06" "project_thumbnail_05 arrow project_title_05" "project_title_04 arrow project_thumbnail_04" "project_thumbnail_03 arrow project_title_03" "project_title_02 arrow project_thumbnail_02" "project_thumbnail_01 arrow project_title_01";
+  grid-template-areas: "project_thumbnail_next arrow project_title_next" "project_title_06 arrow project_thumbnail_06" "project_thumbnail_05 arrow project_title_05" "project_title_04 arrow project_thumbnail_04" "project_thumbnail_03 arrow project_title_03" "project_title_02 arrow project_thumbnail_02" "project_thumbnail_01 arrow project_title_01";
 }
 .container_projects div {
   height: 16rem;
@@ -396,41 +396,23 @@ h1 {
   margin: auto;
 }
 
+.container_about {
+  font-family: "avenir";
+  width: 55%;
+  margin: auto;
+  margin-top: 5rem;
+}
+.container_about p {
+  padding: 2rem 0;
+}
+
 @media screen and (max-width: 768px) {
   menu {
     display: none;
   }
 
   .containervideo {
-    position: absolute;
-    top: 400px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 60%;
-    height: 10rem;
-    background-image: url("../../assets/files/waves.png");
-  }
-  .containervideo video {
     display: none;
   }
-  .containervideo .text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    line-height: 25px;
-    background: white;
-    font-size: 1.8rem;
-    font-family: "avenir";
-    mix-blend-mode: screen;
-    letter-spacing: 7px;
-    font-weight: bolder;
-  }
-  .containervideo .text span {
-    font-size: 1rem;
-  }
-
-  /* ferme la media queries */
-}/*# sourceMappingURL=style.css.map */
+}
+/* ferme la media queries *//*# sourceMappingURL=style.css.map */
