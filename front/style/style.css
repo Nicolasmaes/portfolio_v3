@@ -5,7 +5,7 @@
   src: url(../../assets/fonts/avenir-next/avenirNextLTPro-bold.otf), url(../../assets/fonts/avenir-next/avenirNextLTPro-it.otf), url(../../assets/fonts/avenir-next/avenirNextLTPro-regular.otf);
 }
 * {
-  border: 1px solid grey;
+  /*     border: 1px solid grey; */
   text-decoration: none;
   margin: 0;
   padding: 0;
@@ -411,6 +411,55 @@ h1 {
   padding: 2rem 0;
 }
 
+.container_design_files {
+  display: flex;
+  justify-content: center;
+}
+.container_design_files embed {
+  width: 50%;
+  height: 800px;
+  margin: auto;
+}
+
+.container_contact {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+  margin: auto;
+}
+.container_contact img {
+  width: 6rem;
+}
+
+form {
+  font-family: "avenir";
+  color: #1e4b4b;
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 20%;
+  height: 100px;
+  margin: auto;
+}
+form div {
+  padding: 4px;
+}
+form div input {
+  font-family: "avenir";
+  padding-left: 5px;
+  border: 1px solid #1e4b4b;
+  background-color: #b8b8b7;
+}
+form div textarea {
+  resize: none;
+  font-family: "avenir";
+  border: 1px solid #1e4b4b;
+  background-color: #b8b8b7;
+  padding-left: 5px;
+}
+
 @media screen and (max-width: 768px) {
   menu {
     display: none;
@@ -419,5 +468,4 @@ h1 {
   .containervideo {
     display: none;
   }
-}
-/* ferme la media queries *//*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -24,7 +24,9 @@ if ($_SESSION['username']) {
     <div class="project_begin"><?= $result['project_begin'] ?></div>
     <div class="project_end"><?= $result['project_end'] ?></div>
     <div class="project_technologies"><?= $result['project_technologies'] ?></div>
-    <div class="dossier_de_conception"><a href="pdf.php"><?= $result['project_design_file'] ?></a></div>
+    <div class="dossier_de_conception">        <a href="pdf.php?id=<?= $result['project_id'] ?>">
+        <p>Dossier de conception</p>
+        </a></div>
     <div class="project_link_website"><a target="_blank" href="<?= $result['project_link_website'] ?>"><?= $result['project_link_website'] ?></a></div>
     <div class="project_link_github"><a target="_blank" href="<?= $result['project_link_github'] ?>"><?= $result['project_link_github'] ?></a></div>
     <div class="project_coworkers"><?= $result['project_coworkers'] ?></div>

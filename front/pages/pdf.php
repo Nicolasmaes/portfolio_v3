@@ -19,7 +19,7 @@ if ($_SESSION['username']) {
 ?>
 
 <div class="container_design_files">
-    <embed src="../../assets/files/<?php $result['project_design_file']?>" width=800 height=500 type='application/pdf'/>
+    <embed src="../../assets/files/<?= $result['project_design_file'] ?>" type='application/pdf'/>
 </div>
 
 <?php include "../includes/footer.php"; ?>
