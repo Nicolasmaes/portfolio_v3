@@ -100,7 +100,7 @@ footer{
         width: 100%;
         height: 100%;
         text-align: center;
-        line-height: 140px;
+        line-height: 200px;
         background: white;
         font-size: 6rem;
         font-family:'avenir';
@@ -268,75 +268,8 @@ h1{
     }
 }
 
-.container_projects {
-    display: grid;
-    grid-template-columns: 1fr 0.1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    width: 80%;
-    margin: 10px auto;
-    grid-template-areas:
-      "project_thumbnail_next . project_title_next"
-      "project_title_06 arrow project_thumbnail_06"
-      "project_thumbnail_05 arrow project_title_05"
-      "project_title_04 arrow project_thumbnail_04"
-      "project_thumbnail_03 arrow project_title_03"
-      "project_title_02 arrow project_thumbnail_02"
-      "project_thumbnail_01 arrow project_title_01";
-      div{
-          height: 16rem;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          font-family: 'avenir';
-          font-weight:bolder;
-          font-size: 2.5rem;
-          color:$primary-color;
-          img{
-              width: 16rem;
-          }
-      }
-  }
-  
-  .project_thumbnail_next { grid-area: project_thumbnail_next; }
-  
-  .arrow { grid-area: arrow; }
-  
-  .project_title_08 { grid-area: project_title_08; }
-  
-  .project_title_07 { grid-area: project_title_07; }
-  
-  .project_title_06 { grid-area: project_title_06; }
-  
-  .project_title_05 { grid-area: project_title_05; }
-  
-  .project_title_04 { grid-area: project_title_04; }
-  
-  .project_title_03 { grid-area: project_title_03; }
-  
-  .project_title_02 { grid-area: project_title_02; }
-  
-  .project_title_01 { grid-area: project_title_01; }
-  
-  .project_title_next { grid-area: project_title_next; }
-  
-  .project_thumbnail_08 { grid-area: project_thumbnail_08; }
-  
-  .project_thumbnail_07 { grid-area: project_thumbnail_07; }
-  
-  .project_thumbnail_06 { grid-area: project_thumbnail_06; }
-  
-  .project_thumbnail_05 { grid-area: project_thumbnail_05; }
-  
-  .project_thumbnail_04 { grid-area: project_thumbnail_04; }
-  
-  .project_thumbnail_03 { grid-area: project_thumbnail_03; }
-  
-  .project_thumbnail_02 { grid-area: project_thumbnail_02; }
-  
-  .project_thumbnail_01 { grid-area: project_thumbnail_01; }
 
+  
 .container_cv{
     display: flex;
     justify-content: center;
@@ -364,49 +297,88 @@ h1{
         margin: auto;
     }
 }
-    .container_contact{
-        padding-top: 2rem;
-        display: flex;
-        justify-content: space-between;
-        width: 20%;
-        margin: auto;
-        img{
-            width:6rem;
+.container_contact{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    margin: auto;
+    img{
+        width:6rem;
+    }
+}
+form{
+    font-family: 'avenir';
+    color:$primary-color;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 20%;
+    height: 100px;
+    margin: auto;
+    div{
+        padding: 4px;
+        input{
+            font-family: 'avenir';
+            padding-left: 5px;
+            border: 1px solid $primary-color;
+            background-color: lightgray;
+        }
+        textarea{
+            resize: none;
+            font-family: 'avenir';
+            border: 1px solid $primary-color;
+            background-color: lightgray;
+            padding-left: 5px;
         }
     }
-    form{
+}
+.thumbnail_first, .thumbnail_second{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    h2{
         font-family: 'avenir';
-        color:$primary-color;
-        padding-top: 5rem;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 20%;
-        height: 100px;
-        margin: auto;
-        div{
-            padding: 4px;
-            input{
-                font-family: 'avenir';
-                padding-left: 5px;
-                border: 1px solid $primary-color;
-                background-color: hsl(60, 1%, 72%);
-            }
-            textarea{
-                resize: none;
-                font-family: 'avenir';
-                border: 1px solid $primary-color;
-                background-color: hsl(60, 1%, 72%);
-                padding-left: 5px;
-            }
-        }
+        color: $primary-color;
+        padding: 1rem;
+
+
 
     }
+    p{
+        font-family: 'avenir';
+        color:#6d6c69;
+        }
+    .paragraph{
+        width: 300px;
+    }
+    .image{
+        transition: 0.5s;
+        margin: 0 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .image:hover{
+        filter: grayscale(100%);
+        transform: scale(1.05);
+        transition: 0.5s;
+    }
+}
+//MEDIA QUERIES
     @media screen and (max-width: 768px) {
     menu{
         display: none;
     }
     .containervideo{
         display: none;
+    }
+    .thumbnail_first{
+        flex-direction: column;
+    }
+    .thumbnail_second{
+        flex-direction: column-reverse;
     }
 }

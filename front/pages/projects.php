@@ -12,39 +12,49 @@ session_start();
 
 ?>
 
+<div class="thumbnail_first">
+<div class="project_title_0<?= $project['project_id'] ?>">
+        <a href="contact.php">
+        <h2>Votre projet, bientôt ici ?</h2>
+        </a>
+    </div>
+    <div>
+        <a href="contact.php"><img class='image' src="../../assets/thumbnails/next_project.png" alt=""></a>
+    </div>
 
-<div class="container_projects">
-<div class="project_title_next">votre projet, ici ?</div>
-<div class="arrow"></div>
-<div class="project_thumbnail_next"><img src="../../assets/thumbnails/next_project.png" alt=""></div>
-<div class="arrow"></div>
+</div>
+
 <?php 
 foreach ($result as $project) {
     if($project['project_id'] % 2 == 0){
 ?>
+<div class="thumbnail_second">
+    <div class="project_thumbnail_0<?= $project['project_id'] ?>">
+    <a href="project_details.php?id=<?= $project['project_id'] ?>"><img class='image' src="../../assets/thumbnails/<?= $project['project_picture'] ?>" alt=""></a>
+    </div>
     <div class="project_title_0<?= $project['project_id'] ?>">
         <a href="project_details.php?id=<?= $project['project_id'] ?>">
         <h2><?= $project['project_title'] ?></h2>
         </a>
+        <div class="paragraph"><p><?= $project['project_context'] ?></p></div>
     </div>
-    <div class="project_thumbnail_0<?= $project['project_id'] ?>">
-        <img src="../../assets/thumbnails/<?= $project['project_picture'] ?>" alt="">
-    </div>
-<?php 
-    }else{  
-?>        
+</div>
+<?php
+    }else{
+?>
+<div class="thumbnail_first">
     <div class="project_title_0<?= $project['project_id'] ?>">
-    <a href="project_details.php?id=<?= $project['project_id'] ?>">
+        <a href="project_details.php?id=<?= $project['project_id'] ?>">
         <h2><?= $project['project_title'] ?></h2>
-    </a>
+        </a>
+        <div class="paragraph"><p><?= $project['project_context'] ?></p></div>
     </div>
     <div class="project_thumbnail_0<?= $project['project_id'] ?>">
-        <img src="../../assets/thumbnails/<?= $project['project_picture'] ?>" alt="">
+    <a href="project_details.php?id=<?= $project['project_id'] ?>"><img class='image' src="../../assets/thumbnails/<?= $project['project_picture'] ?>" alt=""></a>
     </div>
+</div>
 <?php
 }
 }
 ?>
-
-
 <?php include "../includes/footer.php"; ?>

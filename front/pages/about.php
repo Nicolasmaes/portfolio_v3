@@ -9,4 +9,7 @@ Je suis en formation actuellement à l'Access Code School de Dijon. Avant ça, j
 <p>Très sportif, j'essaye chaque année de parcourir plus de kilomètres à pied, en vélo et en natation ! J'ai couru 3 marathons et 1 triathlon jusqu'ici. Vivement la reprise des courses pour se fixer de nouveaux objectifs !</p>
 
 </div>
+
+
+
 <?php include "../includes/footer.php"; ?>

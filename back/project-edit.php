@@ -38,7 +38,7 @@
     <form action="add-form-handler.php" method="post" enctype="multipart/form-data"> <!-- pour envoyer plusieurs formats dans ce formulaire -->
         <div class='centering'>
             <label for="input_title">Title</label>
-            <input type="text" id="input_title" name="project_title">
+            <input type="text" id="input_title" name="project_title" value="">
         </div>
 
         <div class="containerproject">

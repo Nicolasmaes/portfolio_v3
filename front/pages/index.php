@@ -8,9 +8,6 @@ session_start();
     <div>
         <span class="text">
         WEBSITES,<br>SOON.<br>
-            <span>
-            (enfin, à partir de janvier 2022)
-            </span>
         </span>
     </div><!-- ferme text -->
 </div><!-- ferme containervideo -->

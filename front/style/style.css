@@ -103,7 +103,7 @@ footer button {
   width: 100%;
   height: 100%;
   text-align: center;
-  line-height: 140px;
+  line-height: 200px;
   background: white;
   font-size: 6rem;
   font-family: "avenir";
@@ -291,106 +291,6 @@ h1 {
   margin: 0 1rem;
 }
 
-.container_projects {
-  display: grid;
-  grid-template-columns: 1fr 0.1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  width: 80%;
-  margin: 10px auto;
-  grid-template-areas: "project_thumbnail_next . project_title_next" "project_title_06 arrow project_thumbnail_06" "project_thumbnail_05 arrow project_title_05" "project_title_04 arrow project_thumbnail_04" "project_thumbnail_03 arrow project_title_03" "project_title_02 arrow project_thumbnail_02" "project_thumbnail_01 arrow project_title_01";
-}
-.container_projects div {
-  height: 16rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "avenir";
-  font-weight: bolder;
-  font-size: 2.5rem;
-  color: #1e4b4b;
-}
-.container_projects div img {
-  width: 16rem;
-}
-
-.project_thumbnail_next {
-  grid-area: project_thumbnail_next;
-}
-
-.arrow {
-  grid-area: arrow;
-}
-
-.project_title_08 {
-  grid-area: project_title_08;
-}
-
-.project_title_07 {
-  grid-area: project_title_07;
-}
-
-.project_title_06 {
-  grid-area: project_title_06;
-}
-
-.project_title_05 {
-  grid-area: project_title_05;
-}
-
-.project_title_04 {
-  grid-area: project_title_04;
-}
-
-.project_title_03 {
-  grid-area: project_title_03;
-}
-
-.project_title_02 {
-  grid-area: project_title_02;
-}
-
-.project_title_01 {
-  grid-area: project_title_01;
-}
-
-.project_title_next {
-  grid-area: project_title_next;
-}
-
-.project_thumbnail_08 {
-  grid-area: project_thumbnail_08;
-}
-
-.project_thumbnail_07 {
-  grid-area: project_thumbnail_07;
-}
-
-.project_thumbnail_06 {
-  grid-area: project_thumbnail_06;
-}
-
-.project_thumbnail_05 {
-  grid-area: project_thumbnail_05;
-}
-
-.project_thumbnail_04 {
-  grid-area: project_thumbnail_04;
-}
-
-.project_thumbnail_03 {
-  grid-area: project_thumbnail_03;
-}
-
-.project_thumbnail_02 {
-  grid-area: project_thumbnail_02;
-}
-
-.project_thumbnail_01 {
-  grid-area: project_thumbnail_01;
-}
-
 .container_cv {
   display: flex;
   justify-content: center;
@@ -450,14 +350,45 @@ form div input {
   font-family: "avenir";
   padding-left: 5px;
   border: 1px solid #1e4b4b;
-  background-color: #b8b8b7;
+  background-color: lightgray;
 }
 form div textarea {
   resize: none;
   font-family: "avenir";
   border: 1px solid #1e4b4b;
-  background-color: #b8b8b7;
+  background-color: lightgray;
   padding-left: 5px;
+}
+
+.thumbnail_first, .thumbnail_second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.thumbnail_first h2, .thumbnail_second h2 {
+  font-family: "avenir";
+  color: #1e4b4b;
+  padding: 1rem;
+}
+.thumbnail_first p, .thumbnail_second p {
+  font-family: "avenir";
+  color: #6d6c69;
+}
+.thumbnail_first .paragraph, .thumbnail_second .paragraph {
+  width: 300px;
+}
+.thumbnail_first .image, .thumbnail_second .image {
+  transition: 0.5s;
+  margin: 0 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.thumbnail_first .image:hover, .thumbnail_second .image:hover {
+  filter: grayscale(100%);
+  transform: scale(1.05);
+  transition: 0.5s;
 }
 
 @media screen and (max-width: 768px) {
@@ -467,5 +398,13 @@ form div textarea {
 
   .containervideo {
     display: none;
+  }
+
+  .thumbnail_first {
+    flex-direction: column;
+  }
+
+  .thumbnail_second {
+    flex-direction: column-reverse;
   }
 }/*# sourceMappingURL=style.css.map */
