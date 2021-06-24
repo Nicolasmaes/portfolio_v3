@@ -29,6 +29,12 @@
 - Une phrase aléatoire sur moi
 - des photos de Coralie pour son insta
 - se connecter à l'api de strava puis afficher ma dernière course sur ma page d'accueil
+- ajouter un input où je peux écrir mon humeur, avec la date d'ajout
+
+Ecrire Nicolas Maës
+
+effacer pour écrire
+Développeur, Webdesigner, Futur papa, Marathonien, Sosie de The Rock, pas Sosie de The Rock (barré)
 
 # Titre de développeur web
 
