@@ -46,11 +46,17 @@ header #hamb_menu_btn .barre {
   top: 20px;
   height: 50%;
 }
-#menu a {
+#menu div {
+  margin: 0.5rem 0;
+}
+#menu div img {
+  display: none;
+}
+#menu div a {
   color: #fff;
   text-decoration: none;
   font-family: "avenir";
-  font-size: 2.5rem;
+  font-size: 1.75rem;
 }
 
 h1 {
@@ -76,11 +82,48 @@ h2 {
 }
 
 @media screen and (min-width: 768px) {
-  #hamb_menu_btn {
+  #menu div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #menu div:hover img {
+    opacity: 1;
+    transition: 0.5s;
+  }
+  #menu div img {
+    display: flex;
+    opacity: 0;
+    transition: 0.3s;
+  }
+  #menu div a {
+    margin: 0 6px;
+  }
+  #menu .hidden_in_desktop {
     display: none;
   }
 
   #menu_desktop {
     display: flex;
+    flex-direction: row;
+  }
+  #menu_desktop div {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  #menu_desktop div:hover img {
+    opacity: 1;
+    transition: 0.5s;
+  }
+  #menu_desktop div img {
+    opacity: 0;
+    transition: 0.3s;
+  }
+  #menu_desktop div a {
+    color: #1e4b4b;
+    text-decoration: none;
+    font-family: "avenir";
+    font-size: 1.5rem;
   }
 }/*# sourceMappingURL=style.css.map */

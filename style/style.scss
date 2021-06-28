@@ -45,12 +45,19 @@ header{
     position: sticky;
     top: 20px;
     height: 50%;
-    a{
-        color:#fff;
-        text-decoration: none;
-        font-family: 'avenir';
-        font-size:2.5rem;
+    div{
+        margin: 0.5rem 0;
+        img{
+            display: none;
+        }
+        a{
+            color:#fff;
+            text-decoration: none;
+            font-family: 'avenir';
+            font-size:1.75rem;
+        }
     }
+
 }
 h1{
     font-family: 'didot';
@@ -75,10 +82,50 @@ h2{
 
 //MEDIA QUERIES
 @media screen and (min-width: 768px) {
-    #hamb_menu_btn{
-        display: none;
+    #menu{
+        div{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            &:hover img{
+                opacity: 1;
+                transition: 0.5s;
+            }
+            img{
+                display: flex;
+                opacity: 0;
+                transition: 0.3s;
+            }
+            a{
+                margin: 0 6px;
+            }
+        }
+        .hidden_in_desktop{
+            display: none;
+        }
     }
+
     #menu_desktop{
         display: flex;
+        flex-direction: row;
+        div{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            &:hover img{
+                opacity: 1;
+                transition: 0.5s;
+            }
+            img{
+                opacity: 0;
+                transition: 0.3s;
+            }
+            a{
+                color:$primary_color;
+                text-decoration: none;
+                font-family: 'avenir';
+                font-size:1.5rem;
+            }
+        }
     }
 }

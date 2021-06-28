@@ -39,6 +39,8 @@ A la place de la vidéo dans le texte
 effacer pour écrire
 Développeur, Webdesigner, Futur papa, Marathonien, Sosie de The Rock, pas Sosie de The Rock (barré)
 
+mettre cv et contzact dans à propos
+
 [w3schools](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_typewriter)
 
 [jsfiddle](https://jsfiddle.net/nicolasmaes/dzcu349f/7/)
