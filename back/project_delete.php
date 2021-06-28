@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-if ($_SESSION['user_name']) {
+if ($_SESSION['username']) {
     if (isset($_GET['id']) && !empty($_GET['id'])) {
         require_once('db_connect.php');
         $id = strip_tags($_GET['id']);

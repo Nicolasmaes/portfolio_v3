@@ -10,17 +10,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../front/style/style.css">
+    <link rel="stylesheet" href="../style/style.css">
 <title>Add form</title>
 </head>
 <body>
     <header>
         <a href="../front/index.php"><img src="../assets/icons/icon_nm.svg" alt="logo du site"></a>
         <menu>
-            <a href="../front/pages/projects.php">projets</a>
-            <a href="../front/pages/cv.php">CV</a>
-            <a href="../front/pages/about.php">à propos de moi</a>
-            <a href="../front/pages/contact.php">contact</a>
+            <div>
+                <img src="../assets/icons/opentag.svg" alt="" class='balise1'>
+                <a href="../front/pages/projects.php">projets</a>
+                <img src="../assets/icons/closingtag.svg" alt="" class='balise2'>
+            </div>
+            <div>
+                <img src="../assets/icons/opentag.svg" alt="" class='balise1'>
+                <a href="../front/pages/cv.php">cv</a>
+                <img src="../assets/icons/closingtag.svg" alt="" class='balise2'>
+            </div>
+            <div>
+                <img src="../assets/icons/opentag.svg" alt="" class='balise1'>
+                <a href="../front/pages/about.php">à propos de moi</a>
+                <img src="../assets/icons/closingtag.svg" alt="" class='balise2'>
+            </div>
+            <div>
+                <img src="../assets/icons/opentag.svg" alt="" class='balise1'>
+                <a href="../front/pages/contact.php">contact</a>
+                <img src="../assets/icons/closingtag.svg" alt="" class='balise2'>
+            </div>
         </menu>
         <div id="hamb_menu_btn">
             <div class="barre" id='barre1'></div>
@@ -35,11 +51,10 @@
         </div>
     </header>
 
-    <form action="add-form-handler.php" method="post" enctype="multipart/form-data"> <!-- pour envoyer plusieurs formats dans ce formulaire -->
-        <div class='centering'>
-            <label for="input_title">Title</label>
-            <input type="text" id="input_title" name="project_title" value="">
-        </div>
+    <form action="add_form_handler.php" method="post" enctype="multipart/form-data"> <!-- pour envoyer plusieurs formats dans ce formulaire -->
+
+        <h1><label for="input_title">Title</label>
+            <input type="text" id="input_title" name="project_title"></h1>
 
         <div class="containerproject">
             <div class="project_begin">
@@ -78,6 +93,10 @@
                 <label for="input_picture">Picture</label>
                 <input type="file" id="input_picture" name="project_picture">
             </div>
+            <div class="favicon">
+                <label for="input_favicon">Favicon</label>
+                <input type="file" id="input_favicon" name="project_favicon">
+            </div>
             <div class="project_context">
                 <label for="input_context">Context</label>
                 <textarea id="input_context" cols="30" rows="10" name="project_context"></textarea>
@@ -91,16 +110,16 @@
                 </div>
             </div>
             <div class="button">
-                <button type="reset">Reinitialize</button><br>
+                <button type="reset">Reset</button><br>
                 <input type="submit" id="submit" value="Send"></input>
                 <!-- <input type="submit"> autre manière de créer un bouton -->
             </div>
         </div>
     </form>
     <footer>
-        <a href="index.php"><img src="../front/assets/icon_nm.svg" alt="logo du site"></a>
+        <a href="index.php"><img src="../assets/icons/icon_nm.svg" alt="logo du site"></a>
         <a href="login-form.php"><button>connexion</button></a>
     </footer>
-    <script src="../front/script/main.js"></script>
+    <script src="../script/main.js"></script>
 </body>
 </html>

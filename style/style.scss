@@ -1,0 +1,84 @@
+@font-face {
+    font-family: "didot";
+    src: url(../assets/fonts/didot/didot-bold-italic.ttf), url(../assets/fonts/didot/didot-lt-std-bold.otf), url(../assets/fonts/didot/didot-lt-std-italic.otf), url(../assets/fonts/didot/didot-medium.ttf), url(../assets/fonts/didot/didot-regular.ttf);
+    font-family: "avenir";
+    src: url(../assets/fonts/avenir-next/avenirNextLTPro-bold.otf), url(../assets/fonts/avenir-next/avenirNextLTPro-it.otf), url(../assets/fonts/avenir-next/avenirNextLTPro-regular.otf);
+}
+$primary_color:#1e4b4b;
+$second_color: #dbf0f0;
+*{
+/*     border: 1px solid grey; */
+    margin: 0;
+    padding: 0;  
+}
+body{
+    background-color:$second-color;
+}
+header{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #fff;
+    img{
+        height:100%;
+    }
+    #hamb_menu_btn{
+        padding: 2px;
+        .barre{
+            background-color:$primary_color;
+            width: 60px;
+            height: 10px;
+            margin: 5px 0;
+            border-radius: 25px; 
+        }
+    }
+}
+#menu{
+    background-color: $primary_color;
+    display: none;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+    height: 50%;
+    a{
+        color:#fff;
+        text-decoration: none;
+        font-family: 'avenir';
+        font-size:2.5rem;
+    }
+}
+h1{
+    font-family: 'didot';
+    color: $primary-color;
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 2rem;
+}
+h2{
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'avenir';
+}
+.gif_accueil{
+    width: 100%;
+}
+#menu_desktop{
+    display: none;
+}
+
+
+
+//MEDIA QUERIES
+@media screen and (min-width: 768px) {
+    #hamb_menu_btn{
+        display: none;
+    }
+    #menu_desktop{
+        display: flex;
+    }
+}

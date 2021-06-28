@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../front/style/style.css">
+    <link rel="stylesheet" href="../style/style.css">
     <title>Log in</title>
 </head>
 <body>
@@ -44,7 +44,7 @@
             <a href="../front/pages/contact.php">contact</a>
         </div>
     </header>
-        <form action="login-form-handler.php" method="post" class='login_form'>
+        <form action="login_form_handler.php" method="post" class='login_form'>
             <div>
                 <label for="username">Username</label>
                 <input type="text" id="username" name="username">
@@ -64,6 +64,6 @@
         <a href="../front/index.php"><img src="../assets/icons/icon_nm.svg" alt="logo du site"></a>
         <a href="login-form.php"><button>connexion</button></a>
     </footer>
-    <script src="../front/script/main.js"></script>
+    <script src="../script/main.js"></script>
 </body>
 </html>

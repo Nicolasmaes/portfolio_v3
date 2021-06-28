@@ -1,19 +1,17 @@
 <?php 
 session_start();
 if ($_SESSION['username']) {
- /*        require_once('db_connect.php');
+    if (isset($_GET['id']) && !empty($_GET['id'])) {
+        require_once('db_connect.php');
         $id = strip_tags($_GET['id']);
         $sql = 'SELECT * FROM `projects` WHERE `project_id`=:id';
         $query = $db->prepare($sql);
         $query->bindValue(':id', $id, PDO::PARAM_STR);
         $query->execute();
-        $result = $query->fetch(); */
-
-        require_once('db_connect.php');
-        $sql='SELECT * FROM `projects`';
-        $query=$db->prepare($sql);
-        $query->execute();
-        $result = $query->fetchAll(PDO::FETCH_ASSOC);
+        $result = $query->fetch();
+    } else {
+        echo 'missing id';
+    }
 } else {
     echo 'Please log in.';
 }
@@ -66,37 +64,30 @@ if ($_SESSION['username']) {
             </div>
         </div>
     </header>
-<h1>Back-office</h1>
-<div class="main_container">
-    <div class="options">
-        <a href="add_form.php"><button><img src="../assets/icons/add.png" alt="logo edit"></button></a>
-        <a href="project_edit.php"><button><img src="../assets/icons/edit.png" alt="logo edit"></button></a>
-        <a href="project_delete.php"><button><img src="../assets/icons/delete.png" alt="logo edit"></button></a>
-        <a href="project_hide.php"><button><img src="../assets/icons/hide.png" alt="logo edit"></button></a>
-    </div><!-- ferme options -->
-    <table>
-        <tr><th></th><th>favicon</th><th>nom du projet</th><th>vues</th><th>date d'ajout</th></tr>
-<?php 
-foreach ($result as $project) {
-?>
-        <tr>
-            <td><input type="checkbox" name="" id=""></td>
-            <td><img src="../assets/favicons/<?= $project['project_favicon'] ?>" alt=""></td>
-            <td><a href="../back/project_details.php?id=<?= $project['project_id'] ?>">
-        <p><?= $project['project_title'] ?></p></a></td>
-        <td></td>
-        <td><p><?= $project['project_end'] ?></p></td>
+<h1><?= $result['project_title'] ?></h1>
 
-<?php
-}
-?>
-    </table>
-</div><!-- ferme main_container -->
+<div class="containerproject">
+    <div class="project_begin"><?= $result['project_begin'] ?></div>
+    <div class="project_end"><?= $result['project_end'] ?></div>
+    <div class="project_technologies"><?= $result['project_technologies'] ?></div>
+    <div class="dossier_de_conception"><a href="design_file.php?id=<?= $result['project_id'] ?>">
+        <p>Dossier de conception</p>
+        </a></div>
+    <div class="project_link_website"><a target="_blank" href="<?= $result['project_link_website'] ?>"><?= $result['project_link_website'] ?></a></div>
+    <div class="project_link_github"><a target="_blank" href="<?= $result['project_link_github'] ?>"><?= $result['project_link_github'] ?></a></div>
+    <div class="project_coworkers"><?= $result['project_coworkers'] ?></div>
+    <div class="sources"><a href="../front/pages/pdf.php?id=<?= $result['project_id'] ?>">
+        <p>Sources</p>
+        </a></div>
+    <div class="screenshots_gallery"><img src="../assets/thumbnails/<?= $result['project_picture'] ?>"></div>
+    <div class="project_context"><?= $result['project_context'] ?></div>
+    <div class="project_specs">
+        <p><?= $result['project_specs'] ?></p>
+        <div class="prototype" id='prototype'><?= $result['project_prototype'] ?></div>
+    </div><!-- ferme project_specs -->
+    <a href="home.php"><button>Back</button></a>
+<a href="project_delete.php?id=<?= $result['project_id'] ?>"><button>Delete <?= $result['project_title'] ?></button></a>
+<a href="project_edit.php?id=<?= $result['project_id'] ?>"><button>Edit <?= $result['project_title'] ?></button></a>
+</div> <!-- ferme containerproject -->
 
-<footer>
-        <a href="../front/index.php"><img src="../assets/icons/icon_nm.svg" alt="logo du site"></a>
-        <a href="login_form.php"><button>connexion</button></a>
-    </footer>
-    <script src="../script/main.js"></script>
-</body>
-</html>
+<?php include "../includes/footer.php"; ?>

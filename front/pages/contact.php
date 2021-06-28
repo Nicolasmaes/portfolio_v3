@@ -1,4 +1,4 @@
-<?php include "../includes/header.php"; ?>
+<?php include "../../includes/header.php"; ?>
 
 <div class="container_contact">
 
@@ -24,4 +24,4 @@
 </form>
 
 
-<?php include "../includes/footer.php"; ?>
+<?php include "../../includes/footer.php"; ?>

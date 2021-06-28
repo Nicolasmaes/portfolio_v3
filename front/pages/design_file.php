@@ -1,5 +1,5 @@
 <?php 
-include "../includes/header.php";
+include "../../includes/header.php";
 session_start();
 if ($_SESSION['username']) {
     if (isset($_GET['id']) && !empty($_GET['id'])) {
@@ -22,4 +22,4 @@ if ($_SESSION['username']) {
     <embed src="../../assets/files/<?= $result['project_design_file'] ?>" type='application/pdf'/>
 </div>
 
-<?php include "../includes/footer.php"; ?>
+<?php include "../../includes/footer.php"; ?>

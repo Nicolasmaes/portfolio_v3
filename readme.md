@@ -31,10 +31,17 @@
 - se connecter à l'api de strava puis afficher ma dernière course sur ma page d'accueil
 - ajouter un input où je peux écrir mon humeur, avec la date d'ajout
 
-Ecrire Nicolas Maës
+background : url('images/sun.png') fixed no-repeat top, radial-gradient(closest-side,red,blue);
+background-attachment: fixed;
+Pour un dégradé fixe sur une div
+A la place de la vidéo dans le texte
 
 effacer pour écrire
 Développeur, Webdesigner, Futur papa, Marathonien, Sosie de The Rock, pas Sosie de The Rock (barré)
+
+[w3schools](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_typewriter)
+
+[jsfiddle](https://jsfiddle.net/nicolasmaes/dzcu349f/7/)
 
 # Titre de développeur web
 

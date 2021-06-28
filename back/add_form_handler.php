@@ -1,6 +1,6 @@
 <?php
 session_start();
-if($_SESSION['user_name']){
+if($_SESSION['username']){
     if($_POST){
         if (
         isset($_POST['project_title']) && !empty($_POST['project_title']) &&
@@ -10,12 +10,8 @@ if($_SESSION['user_name']){
         isset($_POST['project_specs']) && !empty($_POST['project_specs']) &&
         isset($_POST['project_link_website']) && !empty($_POST['project_link_website']) &&
         isset($_POST['project_link_github']) && !empty($_POST['project_link_github']) &&
- /*        isset($_POST['project_coworkers']) && !empty($_POST['project_coworkers']) && */
         isset($_POST['project_technologies']) && !empty($_POST['project_technologies']) &&
         isset($_FILES['project_picture']) && !empty($_FILES['project_picture'])
-        /*isset($_POST['project_proto']) && !empty($_POST['project_proto']) &&
-        isset($_POST['project_design_file']) && !empty($_POST['project_design_file']) &&
-        isset($_POST['project_sources']) && !empty($_POST['project_sources'])  */
         ){
 
         require_once("db_connect.php");
@@ -49,7 +45,7 @@ if($_SESSION['user_name']){
             }     
         }  else {     
     
-            $target_dir = "../assets/";
+            $target_dir = "../assets/thumbnails/";
             $target_file = $target_dir . basename($_FILES["project_picture"]["name"]);
             $uploadOk = 1;
             $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));

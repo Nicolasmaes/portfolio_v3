@@ -1,6 +1,6 @@
 <?php 
 
-include "../includes/header.php"; 
+include "../../includes/header.php"; 
 
 session_start();
 
@@ -57,4 +57,4 @@ foreach ($result as $project) {
 }
 }
 ?>
-<?php include "../includes/footer.php"; ?>
+<?php include "../../includes/footer.php"; ?>

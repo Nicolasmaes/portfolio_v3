@@ -43,7 +43,7 @@
             <a href="../front/pages/contact.php">contact</a>
         </div>
     </header>
-        <a href="register-form.php">Sign up</a>
-        <a href="login-form.php">Log in</a>
+        <a href="register_form.php">Sign up</a>
+        <a href="login_form.php">Log in</a>
     </body>
 </html>

@@ -1,4 +1,4 @@
-<?php include "../includes/header.php"; ?>
+<?php include "../../includes/header.php"; ?>
 <div class="container_about">
 <p>J'ai 32 ans et j'habite à Dijon.
     
@@ -12,4 +12,4 @@ Je suis en formation actuellement à l'Access Code School de Dijon. Avant ça, j
 
 
 
-<?php include "../includes/footer.php"; ?>
+<?php include "../../includes/footer.php"; ?>
