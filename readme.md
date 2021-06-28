@@ -25,7 +25,6 @@
 # Idées pour le portfolio
 
 - pour les sources, faire un fichier PDF par projet
-- Pour la page d'accueil : afficher ma librairie javaScript et mes articles
 - Une phrase aléatoire sur moi
 - des photos de Coralie pour son insta
 - se connecter à l'api de strava puis afficher ma dernière course sur ma page d'accueil

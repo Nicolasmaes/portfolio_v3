@@ -42,10 +42,9 @@ function unroll(){
         menu_mobile.style.display = 'flex';
         counter = 'open';
         console.log(counter);
-        }
-        else{
+        }else{
         menu.style.display = 'none';
         counter = 'closed';
         console.log(counter);
-}
+        }
 }

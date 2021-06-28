@@ -81,6 +81,29 @@ h2 {
   display: none;
 }
 
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #fff;
+}
+footer a {
+  font-family: "avenir";
+  color: #1e4b4b;
+  text-decoration: none;
+}
+
+.slogan {
+  color: #1e4b4b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../assets/files/waves.png");
+  height: 10rem;
+  max-width: 100%;
+  margin: auto;
+}
+
 @media screen and (min-width: 768px) {
   #menu div {
     display: flex;
@@ -125,5 +148,17 @@ h2 {
     text-decoration: none;
     font-family: "avenir";
     font-size: 1.5rem;
+  }
+
+  .gif {
+    display: flex;
+    justify-content: center;
+  }
+  .gif img {
+    max-width: 40%;
+  }
+
+  .slogan {
+    max-width: 40%;
   }
 }/*# sourceMappingURL=style.css.map */

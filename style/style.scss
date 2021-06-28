@@ -77,6 +77,28 @@ h2{
 #menu_desktop{
     display: none;
 }
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    a{
+        font-family: 'avenir';
+        color:$primary_color;
+        text-decoration: none;
+    }
+}
+.slogan{
+    color:$primary-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../assets/files/waves.png');
+    height: 10rem;
+    max-width: 100%;
+    margin: auto;
+}
+
 
 
 
@@ -104,7 +126,6 @@ h2{
             display: none;
         }
     }
-
     #menu_desktop{
         display: flex;
         flex-direction: row;
@@ -127,5 +148,15 @@ h2{
                 font-size:1.5rem;
             }
         }
+    }
+    .gif{
+        display: flex;
+        justify-content: center;
+        img{
+            max-width: 40%;
+        }
+    }
+    .slogan{
+        max-width: 40%;
     }
 }

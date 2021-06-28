@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -46,4 +46,4 @@
         <a href="register_form.php">Sign up</a>
         <a href="login_form.php">Log in</a>
     </body>
-</html>
+</html> -->
