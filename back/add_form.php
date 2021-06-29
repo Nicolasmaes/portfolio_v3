@@ -101,10 +101,6 @@
                 <label for="input_coworkers">Coworkers</label>
                 <textarea id="input_coworkers" cols="30" rows="10" name="project_coworkers"></textarea>
             </div>
-            <div class="sources">
-                <label for="input_sources">Sources</label>
-                <input type='file' id="input_sources" name="project_sources">
-            </div>
             <div class="screenshots_gallery">
                 <label for="input_picture">Picture</label>
                 <input type="file" id="input_picture" name="project_picture">
@@ -120,10 +116,6 @@
             <div class="project_specs">
                 <label for="input_specs">Specs</label>
                 <textarea id="input_context" cols="20" rows="5" name="project_specs"></textarea>
-                <div class="prototype">
-                    <label for="input_proto">Prototype</label>
-                    <input type='file' id="input_proto" name="project_proto">
-                </div>
             </div>
             <div class="button">
                 <button type="reset">Reset</button><br>

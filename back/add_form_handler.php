@@ -24,9 +24,6 @@ if($_SESSION['username']){
         $github_link = strip_tags($_POST['project_link_github']);
         $coworkers = strip_tags($_POST['project_coworkers']);
         $technologies = strip_tags($_POST['project_technologies']);
-/*         $proto = strip_tags($_POST['project_proto']);
-        $design_file = strip_tags($_POST['project_design_file']);
-        $sources = strip_tags($_POST['project_sources']); */
 
         if ($_FILES['project_picture']['error']) {     
             switch ($_FILES['project_picture']['error']){     

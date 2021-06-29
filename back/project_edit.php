@@ -79,7 +79,7 @@ if ($_SESSION['username']) {
     </div> 
 </menu>
 
-    <form action="add-form-handler.php" method="post" enctype="multipart/form-data"> <!-- pour envoyer plusieurs formats dans ce formulaire -->
+    <form action="project_edit_form_handler.php" method="post" enctype="multipart/form-data"> <!-- pour envoyer plusieurs formats dans ce formulaire -->
 
         <h1><label for="input_title">Title</label>
             <input type="text" id="input_title" name="project_title" value="<?= $result['project_title'] ?>"></h1>

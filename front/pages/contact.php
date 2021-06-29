@@ -7,18 +7,18 @@
 </div>
 <form action="">
     <div>
-        <label for="visitor_name">Votre nom</label>
+        <label for="visitor_name">votre nom</label>
         <input id='visitor_name' type="text">
     </div>
     <div>
-        <label for="visitor_email">Votre adresse e-mail</label>
-        <input id='visitor_email' type="text"></div>
+        <label for="visitor_email">votre adresse e-mail</label>
+        <input id='visitor_email' type="email"></div>
     <div>
-        <label for="visitor_message">Votre message</label>
-        <textarea cols='50' rows='10' id='visitor_message' type="text"></textarea>
+        <label for="visitor_message">votre message</label>
+        <textarea cols='50' rows='8 id='visitor_message' type="text"></textarea>
     </div>
     <div class="button">
-        <input type="submit" id="submit" value="Send"></input>
+        <input type="submit" id="submit" value="envoyer"></input>
         <!-- <input type="submit"> autre manière de créer un bouton -->
     </div>
 </form>
