@@ -2,8 +2,6 @@
 include "../../includes/header.php";
 session_start();
 ?>
-<a href="../../back/home.php"><p>b-o</p></a>
-
 <h1>Nicolas MAËS</h1>
 <div id="app"></div>
 <div class="gif">
@@ -12,5 +10,6 @@ session_start();
 <div class="slogan">
 <h2>WEBSITES,<br>SOON.</h2>
 </div>
+<a href="../../back/home.php"><p>b-o</p></a>
 
 <?php include "../../includes/footer.php"; ?>

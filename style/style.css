@@ -10,6 +10,26 @@
   padding: 0;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /*     border-radius: 25px; */
+  background-color: #878582;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1e4b4b;
+}
+
+/* Handle on hover */
+/*   ::-webkit-scrollbar-thumb:hover {
+    background: red; 
+  } */
 body {
   background-color: #dbf0f0;
 }
@@ -73,6 +93,12 @@ h2 {
   font-family: "avenir";
 }
 
+#app {
+  font-family: "avenir";
+  color: #1e4b4b;
+  margin: 1rem 4rem;
+}
+
 .gif_accueil {
   width: 100%;
 }
@@ -94,7 +120,7 @@ footer a {
 }
 
 .slogan {
-  color: #1e4b4b;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -102,6 +128,38 @@ footer a {
   height: 10rem;
   max-width: 100%;
   margin: auto;
+}
+
+.thumbnail_first {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+.thumbnail_first div a {
+  text-decoration: none;
+  color: #1e4b4b;
+}
+.thumbnail_first .paragraph {
+  margin: 0 1rem 0.5rem 1rem;
+  font-family: "avenir";
+}
+
+.thumbnail_second {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+.thumbnail_second div a {
+  text-decoration: none;
+  color: #1e4b4b;
+}
+.thumbnail_second .paragraph {
+  margin: 0 1rem 0.5rem 1rem;
+  font-family: "avenir";
 }
 
 @media screen and (min-width: 768px) {
@@ -148,6 +206,12 @@ footer a {
     text-decoration: none;
     font-family: "avenir";
     font-size: 1.5rem;
+  }
+
+  #app {
+    font-size: 2rem;
+    width: 40%;
+    margin: 1rem auto;
   }
 
   .gif {
