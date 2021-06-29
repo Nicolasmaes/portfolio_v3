@@ -81,12 +81,12 @@ if ($_SESSION['username']) {
     </div> 
 </menu>
 <h1>Back-office</h1>
-<div class="main_container">
+<div class="option_container">
     <div class="options">
         <a href="add_form.php"><button><img src="../assets/icons/add.png" alt="logo edit"></button></a>
         <a href="project_edit.php"><button><img src="../assets/icons/edit.png" alt="logo edit"></button></a>
         <a href="project_delete.php"><button><img src="../assets/icons/delete.png" alt="logo edit"></button></a>
-        <a href="project_hide.php"><button><img src="../assets/icons/hide.png" alt="logo edit"></button></a>
+        <a href="#"><button><img src="../assets/icons/hide.png" alt="logo edit"></button></a>
     </div><!-- ferme options -->
     <table>
         <tr><th></th><th>favicon</th><th>nom du projet</th><th>vues</th><th>date d'ajout</th></tr>
@@ -112,6 +112,8 @@ foreach ($result as $project) {
         <a href="index.php"><img src="../assets/icons/icon_nm.svg" alt="logo du site"></a>
         <a href="../../back/login_form.php">connexion</a>
     </footer>
-    <script src="../script/main.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
+    <script src="../script/hamburger_menu.js"></script>
+    <script src="../script/typewriter_effect.js"></script>
     </body>
 </html>

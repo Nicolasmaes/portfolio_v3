@@ -4,6 +4,7 @@
         <a href="../../back/login_form.php">connexion</a>
     </footer>
     <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
-    <script src="../../script/main.js"></script>
+    <script src="../../script/hamburger_menu.js"></script>
+    <script src="../../script/typewriter_effect.js"></script>
     </body>
 </html>

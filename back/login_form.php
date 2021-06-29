@@ -85,6 +85,8 @@ session_start();
         <a href="index.php"><img src="../assets/icons/icon_nm.svg" alt="logo du site"></a>
         <a href="../../back/login_form.php">connexion</a>
     </footer>
-    <script src="../script/main.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
+    <script src="../script/hamburger_menu.js"></script>
+    <script src="../script/typewriter_effect.js"></script>
     </body>
 </html>
