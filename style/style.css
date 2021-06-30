@@ -257,6 +257,67 @@ form .button #submit {
   margin: 0 auto;
 }
 
+.container_articles .container_articles_links {
+  height: 22vh;
+}
+.container_articles .container_articles_links a {
+  text-decoration: none;
+}
+.container_articles .container_articles_links a h1 {
+  color: #1e4b4b;
+  font-size: 3rem;
+  font-family: "avenir";
+}
+
+.article {
+  margin: 0 1rem;
+  font-family: "avenir";
+}
+.article .date {
+  text-align: center;
+}
+.article h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.article h2 {
+  font-size: 1.5rem;
+  border: 1px solid #1e4b4b;
+  margin: 1rem 0;
+  color: #1e4b4b;
+}
+.article .article__group p .bold {
+  font-size: 1rem;
+  color: #1e4b4b;
+}
+.article .article__group table {
+  border: 1px solid #1e4b4b;
+  border-collapse: collapse;
+}
+.article .article__group table th {
+  border: 1px solid #1e4b4b;
+  padding: 0 8px;
+}
+.article .article__group table td {
+  border: 1px solid #1e4b4b;
+  padding: 0.5rem;
+}
+.article .article__group table td:nth-child(even) {
+  text-align: center;
+}
+.article .article__group table td:nth-child(odd) {
+  padding-left: 4px;
+}
+.article .article__group .bold {
+  font-size: 1rem;
+  color: #1e4b4b;
+  margin: 1rem;
+}
+.article .article__group .bold .space {
+  display: flex;
+  flex-direction: column;
+}
+
 @media screen and (min-width: 768px) {
   #menu div {
     display: flex;
