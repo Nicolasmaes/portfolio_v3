@@ -315,9 +315,23 @@ form{
                 flex-direction: column;
             }
         }
+        h2{
+            border:none;
+            text-align: left;
+        }
+        a{
+            display: flex;
+            text-decoration: none;
+            color:$primary_color;
+            font-family: 'avenir';
+        }
     }
 
 }
+kbd{
+    border:1px solid grey;
+}
+
 
 
 
@@ -454,6 +468,13 @@ form{
             width: 50%;
             margin: 0 auto;
             }
+        }
+    }
+    .article{
+        margin: 0 15%;
+        table{
+            display: flex;
+            justify-content: center;
         }
     }
 }

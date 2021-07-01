@@ -317,6 +317,20 @@ form .button #submit {
   display: flex;
   flex-direction: column;
 }
+.article .article__group h2 {
+  border: none;
+  text-align: left;
+}
+.article .article__group a {
+  display: flex;
+  text-decoration: none;
+  color: #1e4b4b;
+  font-family: "avenir";
+}
+
+kbd {
+  border: 1px solid grey;
+}
 
 @media screen and (min-width: 768px) {
   #menu div {
@@ -444,5 +458,13 @@ form .button #submit {
     border-radius: 0;
     width: 50%;
     margin: 0 auto;
+  }
+
+  .article {
+    margin: 0 15%;
+  }
+  .article table {
+    display: flex;
+    justify-content: center;
   }
 }/*# sourceMappingURL=style.css.map */
