@@ -9,7 +9,7 @@
 </head>
 <body>
 <header>
-    <a href="../front/index.php">
+<a href="../index.php">
         <img src="../assets/icons/icon_nm.svg" alt="logo du site">
     </a>
     <menu id='menu_desktop'>
