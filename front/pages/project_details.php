@@ -1,7 +1,6 @@
 <?php 
 include "../../includes/header.php";
 session_start();
-if ($_SESSION['username']) {
     if (isset($_GET['id']) && !empty($_GET['id'])) {
         require_once('../../back/db_connect.php');
         $id = strip_tags($_GET['id']);
@@ -12,9 +11,6 @@ if ($_SESSION['username']) {
         $result = $query->fetch();
     } else {
         echo 'missing id';
-    }
-} else {
-    echo 'Please log in.';
 }
 ?>
 

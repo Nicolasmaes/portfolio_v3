@@ -287,7 +287,7 @@ form{
             }
         }
         table{
-            border: 1px solid $primary_color;
+            /* border: 1px solid $primary_color; */
             border-collapse: collapse;
             th{
                 border: 1px solid $primary_color;
@@ -330,6 +330,20 @@ form{
 }
 kbd{
     border:1px solid grey;
+}
+.container_about{
+    margin: 1rem;
+    .about_sports{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'avenir';
+        font-size: 1rem;
+    }
+    img{
+        max-width: 75%;
+        height: auto;
+    }
 }
 
 

@@ -1,7 +1,7 @@
 <?php include "../../includes/header.php"; ?>
 <div class="article">
 <div class="article__group">
-        <h2>Ces articles ont été écrits durant la formation ma formation à l'Access Code School, ils ont été bien utile lors de la création de certains projets.</h2>
+        <h2>Ces articles ont été écrits durant la formation ma formation à l'Access Code School, ils ont été bien utiles lors de la création de certains projets.</h2>
 </div>
 
 <div class="container_articles">
