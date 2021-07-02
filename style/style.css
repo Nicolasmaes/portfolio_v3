@@ -5,7 +5,7 @@
   src: url(../assets/fonts/avenir-next/avenirNextLTPro-bold.otf), url(../assets/fonts/avenir-next/avenirNextLTPro-it.otf), url(../assets/fonts/avenir-next/avenirNextLTPro-regular.otf);
 }
 * {
-  /*     border: 1px solid grey; */
+  border: 1px solid grey;
   margin: 0;
   padding: 0;
 }
@@ -129,9 +129,12 @@ footer a {
   align-items: center;
   justify-content: center;
   background-image: url("../assets/files/waves.png");
-  height: 13rem;
+  height: 14rem;
   max-width: 100%;
   margin: auto;
+  /*     h2{
+          font-size: clamp(1rem, 10%, 5rem);
+      } */
 }
 
 .thumbnail_first {
@@ -144,9 +147,22 @@ footer a {
 .thumbnail_first h2 {
   padding: 2rem;
 }
+.thumbnail_first div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .thumbnail_first div a {
   text-decoration: none;
   color: #1e4b4b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.thumbnail_first div a img {
+  max-width: 75%;
+  margin: auto;
 }
 .thumbnail_first .paragraph {
   margin: 0 1rem 0.5rem 1rem;
@@ -163,9 +179,22 @@ footer a {
 .thumbnail_second h2 {
   padding: 2rem;
 }
+.thumbnail_second div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .thumbnail_second div a {
   text-decoration: none;
   color: #1e4b4b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.thumbnail_second div a img {
+  max-width: 75%;
+  margin: auto;
 }
 .thumbnail_second .paragraph {
   margin: 0 1rem 0.5rem 1rem;
@@ -347,6 +376,84 @@ kbd {
   height: auto;
 }
 
+.intro_aux_articles {
+  margin-top: 2rem;
+}
+
+.main_containter_single_project {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container {
+  display: grid;
+  font-family: "avenir";
+  color: #1e4b4b;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.25fr 1fr 2fr 1fr 2fr 2fr 2fr 2fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-items: center;
+  grid-template-areas: ". . ." ". project_link_website ." ". screenshots_gallery ." ". dates ." ". project_context ." ". project_specs ." ". project_coworkers ." ". project_technologies ." ". project_link_github ." ". design_file .";
+  width: 38.6%;
+  height: 100%;
+}
+
+.project_link_website {
+  grid-area: project_link_website;
+}
+.project_link_website a {
+  text-decoration: none;
+  color: #1e4b4b;
+}
+
+.screenshots_gallery {
+  grid-area: screenshots_gallery;
+}
+
+.dates {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "project_begin project_end";
+  grid-area: dates;
+}
+
+.project_begin {
+  grid-area: project_begin;
+}
+
+.project_end {
+  grid-area: project_end;
+}
+
+.project_context {
+  grid-area: project_context;
+}
+
+.project_specs {
+  grid-area: project_specs;
+}
+
+.project_coworkers {
+  grid-area: project_coworkers;
+}
+
+.project_technologies {
+  grid-area: project_technologies;
+}
+
+.project_link_github {
+  grid-area: project_link_github;
+}
+
+.design_file {
+  grid-area: design_file;
+}
+
 @media screen and (min-width: 768px) {
   #menu div {
     display: flex;
@@ -423,9 +530,13 @@ kbd {
     text-decoration: none;
     color: #1e4b4b;
   }
+  .thumbnail_first div a img {
+    max-width: none;
+    margin: auto;
+  }
   .thumbnail_first .paragraph {
     font-family: "avenir";
-    margin: 0 10rem;
+    margin: 0 1rem;
   }
 
   .thumbnail_second {
@@ -443,9 +554,13 @@ kbd {
     text-decoration: none;
     color: #1e4b4b;
   }
+  .thumbnail_second div a img {
+    max-width: none;
+    margin: auto;
+  }
   .thumbnail_second .paragraph {
     font-family: "avenir";
-    margin: 0 10rem;
+    margin: 0 1rem;
   }
 
   .container_cv {

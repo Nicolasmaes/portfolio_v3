@@ -8,8 +8,14 @@ session_start();
 <img class='gif_accueil' src="../../assets/pictures/apropos_image.gif" alt="Nicolas qui tape au clavier">
 </div> <!-- ferme gif -->
 <div class="slogan">
-<h2>WEBSITES,<br>SOON.</h2>
+<h2>GET YOUR OWN<br> WEBSITE, SOON.</h2>
 </div>
-<a href="../../back/home.php"><p>b-o</p></a>
-
+<?php 
+if (isset($_SESSION['username'])&&!empty($_SESSION['username'])) {?>
+<a href="../../back/home.php">b-o</a>
+<?php
+}else{
+echo '';
+}
+?>
 <?php include "../../includes/footer.php"; ?>

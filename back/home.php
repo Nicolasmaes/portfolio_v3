@@ -111,6 +111,7 @@ foreach ($result as $project) {
         <a href="../pages/contact.php">contact</a>
         <a href="index.php"><img src="../assets/icons/icon_nm.svg" alt="logo du site"></a>
         <a href="login_form.php">connexion</a>
+        <a href="disconnect.php">déconnexion</a>
     </footer>
     <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
     <script src="../script/hamburger_menu.js"></script>
