@@ -1,4 +1,5 @@
-<?php include "../../includes/header.php"; ?>
+<?php include "../../includes/header.php";
+session_start();?>
 <div class="container_about">
         <div class="about_me">
         <p>J'ai 32 ans et j'habite à Dijon.<br>

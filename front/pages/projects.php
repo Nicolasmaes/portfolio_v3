@@ -24,7 +24,7 @@ session_start();
 foreach ($result as $project) {
     if($project['project_id'] % 2 == 0){
 ?>
-<div class="thumbnail_first">
+<div class="thumbnail_first" data-aos="fade-left">
     <div class="project_thumbnail_0<?= $project['project_id'] ?>">
     <a href="project_details.php?id=<?= $project['project_id'] ?>"><img class='image' src="../../assets/thumbnails/<?= $project['project_picture'] ?>" alt=""></a>
     </div>
@@ -38,7 +38,7 @@ foreach ($result as $project) {
 <?php
     }else{
 ?>
-<div class="thumbnail_second">
+<div class="thumbnail_second" data-aos="fade-right">
     <div class="project_title_0<?= $project['project_id'] ?>">
         <a href="project_details.php?id=<?= $project['project_id'] ?>">
         <h2><?= $project['project_title'] ?></h2>

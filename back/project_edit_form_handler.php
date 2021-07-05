@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-if ($_SESSION['user_name']) {
+if ($_SESSION['username']) {
     if ($_POST) {
         if (
             isset($_POST['project_id']) && !empty($_POST['project_id']) &&
@@ -14,9 +14,6 @@ if ($_SESSION['user_name']) {
             isset($_POST['project_link_github']) && !empty($_POST['project_link_github']) &&
             isset($_POST['project_coworkers']) && !empty($_POST['project_coworkers']) &&
             isset($_POST['project_technologies']) && !empty($_POST['project_technologies'])
-/*             isset($_POST['project_proto']) && !empty($_POST['project_proto']) &&
-            isset($_POST['project_design_file']) && !empty($_POST['project_design_file']) &&
-            isset($_POST['project_sources']) && !empty($_POST['project_sources'])  */
         ) {
             require_once("db_connect.php");
             $id = strip_tags($_POST['project_id']);
@@ -29,11 +26,8 @@ if ($_SESSION['user_name']) {
             $github_link = strip_tags($_POST['project_link_github']);
             $coworkers = strip_tags($_POST['project_coworkers']);
             $technologies = strip_tags($_POST['project_technologies']);
-            $proto = strip_tags($_POST['project_proto']);
-            $design_file = strip_tags($_POST['project_design_file']);
-            $sources = strip_tags($_POST['project_sources']);
 
-            $sql = 'UPDATE `projects` SET  `project_title`=:project_title, `project_begin`=:project_begin,`project_end`=:project_end,`project_context`=:project_context,`project_specs`=:project_specs, `project_link_website`=:project_link_website,`project_link_github`=:project_link_github, `project_coworkers`=:project_coworkers, `project_technologies`=:project_technologies, `project_proto`=:project_proto, `project_design_file`=:project_design_file, `project_sources`=:project_sources WHERE `project_id`=:project_id';
+            $sql = 'UPDATE `projects` SET  `project_title`=:project_title, `project_begin`=:project_begin,`project_end`=:project_end,`project_context`=:project_context,`project_specs`=:project_specs, `project_link_website`=:project_link_website,`project_link_github`=:project_link_github, `project_coworkers`=:project_coworkers, `project_technologies`=:project_technologies WHERE `project_id`=:project_id';
             
             $query = $db->prepare($sql);
 
