@@ -380,6 +380,18 @@ kbd {
   margin-top: 2rem;
 }
 
+.embed_collection {
+  margin-top: 1rem;
+}
+.embed_collection embed {
+  /*         width: 95%;
+          display: flex;
+          justify-content: center; */
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+
 @media screen and (min-width: 768px) {
   #menu div {
     display: flex;
