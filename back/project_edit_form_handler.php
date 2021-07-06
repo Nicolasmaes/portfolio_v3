@@ -8,12 +8,12 @@ if ($_SESSION['username']) {
             isset($_POST['project_title']) && !empty($_POST['project_title']) &&
             isset($_POST['project_begin']) && !empty($_POST['project_begin']) &&
             isset($_POST['project_end']) && !empty($_POST['project_end']) &&
-            isset($_POST['project_context']) && !empty($_POST['project_context']) &&
-            isset($_POST['project_specs']) && !empty($_POST['project_specs']) &&
+            isset($_POST['project_technologies']) && !empty($_POST['project_technologies']) &&
             isset($_POST['project_link_website']) && !empty($_POST['project_link_website']) &&
             isset($_POST['project_link_github']) && !empty($_POST['project_link_github']) &&
             isset($_POST['project_coworkers']) && !empty($_POST['project_coworkers']) &&
-            isset($_POST['project_technologies']) && !empty($_POST['project_technologies'])
+            isset($_POST['project_context']) && !empty($_POST['project_context']) &&
+            isset($_POST['project_specs']) && !empty($_POST['project_specs'])
         ) {
             require_once("db_connect.php");
             $id = strip_tags($_POST['project_id']);
@@ -27,7 +27,7 @@ if ($_SESSION['username']) {
             $coworkers = strip_tags($_POST['project_coworkers']);
             $technologies = strip_tags($_POST['project_technologies']);
 
-            $sql = 'UPDATE `projects` SET  `project_title`=:project_title, `project_begin`=:project_begin,`project_end`=:project_end,`project_context`=:project_context,`project_specs`=:project_specs, `project_link_website`=:project_link_website,`project_link_github`=:project_link_github, `project_coworkers`=:project_coworkers, `project_technologies`=:project_technologies WHERE `project_id`=:project_id';
+            $sql = 'UPDATE `projects` SET  `project_title`=:project_title, `project_begin`=:project_begin, `project_end`=:project_end, `project_technologies`=:project_technologies, `project_link_website`=:project_link_website, `project_link_github`=:project_link_github, `project_coworkers`=:project_coworkers, `project_context`=:project_context, `project_specs`=:project_specs WHERE `project_id`=:project_id';
             
             $query = $db->prepare($sql);
 
@@ -37,6 +37,8 @@ if ($_SESSION['username']) {
             $query->bindValue(':project_end', $end, PDO::PARAM_STR);
             $query->bindValue(':project_context', $context, PDO::PARAM_STR);
             $query->bindValue(':project_specs', $specs, PDO::PARAM_STR);
+            $query->bindValue(':project_technologies', $technologies, PDO::PARAM_STR);
+            $query->bindValue(':project_coworkers', $coworkers, PDO::PARAM_STR);
             $query->bindValue(':project_link_website', $website_link, PDO::PARAM_STR);
             $query->bindValue(':project_link_github', $github_link, PDO::PARAM_STR);
             $query->execute();

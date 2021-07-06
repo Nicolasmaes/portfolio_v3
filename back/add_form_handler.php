@@ -10,7 +10,7 @@ if($_SESSION['username']){
         isset($_POST['project_specs']) && !empty($_POST['project_specs']) &&
         isset($_POST['project_link_website']) && !empty($_POST['project_link_website']) &&
         isset($_POST['project_link_github']) && !empty($_POST['project_link_github']) &&
-        isset($_POST['project_technologies']) && !empty($_POST['project_technologies']) &&
+        isset($_POST['project_technologies']) && !empty($_POST['project_technologies'])&&
         isset($_FILES['project_picture']) && !empty($_FILES['project_picture'])
         ){
 

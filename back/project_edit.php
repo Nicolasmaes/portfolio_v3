@@ -58,7 +58,7 @@ include "../includes_back/header.php";
                 <label for="input_specs">Specs</label>
                 <textarea id="input_context" cols="20" rows="5" name="project_specs"><?= $result['project_specs'] ?></textarea>
             </div>
-            <input type="hidden" name="input_id" value="<?= $result['project_id'] ?>">
+            <input type="hidden" name="project_id" value="<?= $result['project_id'] ?>">
             <div class="button">
                 <button type="reset">Reinitialize</button><br>
                 <input type="submit" id="submit" value="Send"></input>
