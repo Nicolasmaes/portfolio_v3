@@ -1,6 +1,8 @@
 <?php include "../../includes/header.php";
 session_start(); ?>
+
 <div class="article">
+<img src="../../assets/thumbnails/articles.png" alt="logo article">
 <div class="article__group">
         <p class='intro_aux_articles'>Ces articles ont été écrits durant la formation ma formation à l'Access Code School, ils ont été bien utiles lors de la création de certains projets.</p>
 </div>

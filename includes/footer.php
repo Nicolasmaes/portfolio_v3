@@ -2,7 +2,19 @@
         <a href="../pages/contact.php">contact</a>
         <a href="index.php"><img src="../../assets/icons/icon_nm.svg" alt="logo du site"></a>
         <div>
+            
+
+            <?php 
+            if (isset($_SESSION['username'])&&!empty($_SESSION['username'])) {
+            echo '';?>
+            
+            <?php
+            }else{ ?>
             <a href="../../back/login_form.php">log in</a>
+            <?php
+            }
+            ?>
+
             <?php 
             if (isset($_SESSION['username'])&&!empty($_SESSION['username'])) {?>
             <a href="../../back/disconnect.php">log out</a>

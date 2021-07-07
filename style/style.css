@@ -383,10 +383,11 @@ kbd {
 .embed_collection {
   margin-top: 1rem;
 }
+.embed_collection h2 {
+  font-size: 2rem;
+  color: #1e4b4b;
+}
 .embed_collection embed {
-  /*         width: 95%;
-          display: flex;
-          justify-content: center; */
   display: flex;
   margin: 0 auto;
   justify-content: center;
@@ -536,5 +537,21 @@ kbd {
   .article table {
     display: flex;
     justify-content: center;
+  }
+
+  .embed_collection {
+    margin-top: 1rem;
+    /*         h2{
+                font-size: 2rem;
+                color:$primary_color;
+            } */
+  }
+  .embed_collection embed {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: center;
+    border: 2px solid #1e4b4b;
+    margin-bottom: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */
