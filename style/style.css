@@ -5,7 +5,7 @@
   src: url(../assets/fonts/avenir-next/avenirNextLTPro-bold.otf), url(../assets/fonts/avenir-next/avenirNextLTPro-it.otf), url(../assets/fonts/avenir-next/avenirNextLTPro-regular.otf);
 }
 * {
-  border: 1px solid grey;
+  /*     border: 1px solid grey; */
   margin: 0;
   padding: 0;
 }
@@ -503,7 +503,7 @@ kbd {
     justify-content: center;
     flex-direction: row;
     margin: 4rem 22rem;
-    border: 1px solid rgba(30, 75, 75, 0.5);
+    /*        border: 1px solid rgba(30,75,75,0.5); */
     padding: 1rem;
   }
   .thumbnail_first div a {
@@ -524,7 +524,7 @@ kbd {
     flex-direction: row;
     justify-content: center;
     margin: 4rem 22rem;
-    border: 1px solid rgba(30, 75, 75, 0.5);
+    /*        border: 1px solid rgba(30,75,75,0.5); */
     padding: 1rem;
   }
   .thumbnail_second h2 {

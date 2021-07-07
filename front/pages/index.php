@@ -19,7 +19,7 @@ echo '';
 <div class="slogan" data-aos="fade-up">
 <h2>GET YOUR OWN<br> WEBSITE, SOON.</h2>
 </div>
-<a href="https://www.instagram.com/coralie.fr17/">
+<!-- <a href="https://www.instagram.com/coralie.fr17/">
     <h2>@coraliefr17 sur Instagram</h2>
     <div class="carousel">
 
@@ -42,5 +42,5 @@ echo '';
     </div>
     <div class="image_viewer">
 
-    </div>
+    </div> -->
 <?php include "../../includes/footer.php"; ?>

@@ -7,7 +7,7 @@
 $primary_color:#1e4b4b;
 $second_color: #dbf0f0;
 *{
-    border: 1px solid grey;
+/*     border: 1px solid grey; */
     margin: 0;
     padding: 0;
 }
@@ -494,7 +494,7 @@ div{
         justify-content: center;
         flex-direction: row;
         margin: 4rem 22rem;
-        border: 1px solid rgba(30,75,75,0.5);
+ /*        border: 1px solid rgba(30,75,75,0.5); */
         padding: 1rem;
         div{
             a{
@@ -516,7 +516,7 @@ div{
         flex-direction: row;
         justify-content: center;
         margin: 4rem 22rem;
-        border: 1px solid rgba(30,75,75,0.5);
+ /*        border: 1px solid rgba(30,75,75,0.5); */
         padding: 1rem;
         h2{
             padding-right: 1rem;
