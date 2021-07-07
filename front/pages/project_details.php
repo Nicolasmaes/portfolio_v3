@@ -15,17 +15,73 @@ session_start();
 ?>
 
 <h1><?= $result['project_title'] ?></h1>
+
 <div class="container_single_project">
-  <div class="project_link_website"><a target="_blank" href="<?= $result['project_link_website'] ?>">site internet</a></div>
-  <div class="screenshots_gallery"><img class='image' src="../../assets/thumbnails/<?= $result['project_picture'] ?>" alt=""></div>
-  <div class="project_begin"><?= $result['project_begin'] ?></div>
-  <div class="project_end"><?= $result['project_end'] ?></div>
-  <div class="project_context"><?= $result['project_context'] ?></div>
-  <div class="project_specs"><?= $result['project_specs'] ?></div>
-  <div class="project_coworkers"><?= $result['project_coworkers'] ?></div>
-  <div class="project_technologies"><?= $result['project_technologies'] ?></div>
-  <div class="project_link_github"><a target="_blank" href="<?= $result['project_link_github'] ?>">dépôt du projet sur GitHub</a></div>
-  <div class="design_file"><a href="design_file.php?id=<?= $result['project_id'] ?>"><p>dossier de conception</p>
-        </a></div>
+    <div data-aos="fade-up" class="project_link_website">
+        <a target="_blank" href="<?= $result['project_link_website'] ?>">
+            <h2>lien vers le projet en ligne &#8594</h2>
+        </a>
+    </div>
+    <div data-aos="fade-up" class="screenshots_gallery">
+        <img class='image' src="../../assets/thumbnails/<?= $result['project_picture'] ?>" alt="">
+    </div>
+    <h2 data-aos="fade-up">début du projet</h2>
+
+    <div data-aos="fade-up" class="project_begin">
+        <?= $result['project_begin'] ?>
+    </div>
+
+    <h2 data-aos="fade-up">mise en ligne</h2>
+
+    <div data-aos="fade-up" class="project_end">
+        <?= $result['project_end'] ?>
+    </div>
+
+    <h2 data-aos="fade-up">contexte</h2>
+
+    <div data-aos="fade-up" class="project_context">
+        <?= $result['project_context'] ?>
+    </div>
+
+    <h2 data-aos="fade-up">spécifications</h2>
+
+    <div data-aos="fade-up" class="project_specs">
+        <?= $result['project_specs'] ?>
+    </div>
+
+    <h2 data-aos="fade-up">collègues de travail</h2>
+
+    <div data-aos="fade-up" class="project_coworkers">
+        <?= $result['project_coworkers'] ?>
+    </div>
+
+    <h2 data-aos="fade-up">stack</h2>
+
+    <div data-aos="fade-up" class="project_technologies">
+        <?= $result['project_technologies'] ?>
+    </div>
+
+<!--     <div class="single_project_links" > -->
+        <div class="project_link_github">
+            <a target="_blank" href="<?= $result['project_link_github'] ?>">
+                <h2>dépôt du projet sur GitHub &#8594</h2>
+            </a>
         </div>
+<?php
+if (!empty($result['project_design_file']))
+{
+?>
+<div class="design_file">
+    <a href="design_file.php?id=<?= $result['project_id'] ?>">
+        <h2>dossier de conception &#8594</h2>
+    </a> 
+</div>
+<?php
+}else{
+echo '';
+}
+?>
+<!--     </div> ferme single_project_links -->
+    
+</div> <!-- ferme container_single_project -->
 <?php include "../../includes/footer.php"; ?>

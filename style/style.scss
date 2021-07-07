@@ -290,6 +290,10 @@ form{
 .article{
     margin: 0 1rem;
     font-family: 'avenir';
+    img{
+        display: flex;
+        justify-content: center;
+    }
     .date{
         text-align: center;
     }
@@ -383,9 +387,43 @@ kbd{
         margin: 0 auto;
         justify-content: center;
         border:2px solid $primary_color;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
     }
 }
+.container_single_project{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: 0 1rem;
+h2{
+    font-size: 2rem;
+    color: $primary_color;
+    margin-top: 2rem;
+}
+div{
+    color:$primary_color;
+    font-family: 'avenir';
+    margin-top: 1rem;
+    a{
+        text-decoration: none;
+        color: $second_color;
+        background-color: $primary_color;
+    }
+}
+}
+.container_design_files{
+        display: flex;
+        margin: 0 auto;
+        width: 95%;
+        height: auto;
+        embed{
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+    }
+}
+
 
 
 
@@ -534,10 +572,6 @@ kbd{
     }
     .embed_collection{
         margin-top: 1rem;
-/*         h2{
-            font-size: 2rem;
-            color:$primary_color;
-        } */
         embed{
             display: flex;
             width: 50%;
@@ -546,5 +580,36 @@ kbd{
             border:2px solid $primary_color;
             margin-bottom: 1rem;
         }
+    }
+    .container_single_project{
+        margin: 0 15%; 
+        justify-content: start;
+        .single_project_links{
+            display: flex;
+            flex-direction: row;
+        }
+    }
+    .container_design_files{
+        display: flex;
+        margin: 0 auto;
+        width: 55vw;
+        height: 100vh;
+    }
+    .carousel{
+        display: flex;
+        max-width: 60%;
+        margin: auto;
+        div{
+            display: flex;
+            justify-content: center;
+            img{
+                width:auto;
+                max-height: 20vh;
+            }
+        }
+    }
+    a{
+        text-decoration: none;
+        color:$primary_color;
     }
 }

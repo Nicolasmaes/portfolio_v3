@@ -30,15 +30,12 @@ include "../includes_back/header.php";
     <div class="project_link_website"><a target="_blank" href="<?= $result['project_link_website'] ?>"><?= $result['project_link_website'] ?></a></div>
     <div class="project_link_github"><a target="_blank" href="<?= $result['project_link_github'] ?>"><?= $result['project_link_github'] ?></a></div>
     <div class="project_coworkers"><?= $result['project_coworkers'] ?></div>
-    <div class="sources"><a href="../front/pages/pdf.php?id=<?= $result['project_id'] ?>">
-        <p>Sources</p>
-        </a></div>
     <div class="screenshots_gallery"><img src="../assets/thumbnails/<?= $result['project_picture'] ?>"></div>
     <div class="project_context"><?= $result['project_context'] ?></div>
     <div class="project_specs"><?= $result['project_specs'] ?></div><!-- ferme project_specs -->
-    <a href="home.php"><button>Back</button></a>
-<a href="project_delete.php?id=<?= $result['project_id'] ?>"><button>Delete <?= $result['project_title'] ?></button></a>
-<a href="project_edit.php?id=<?= $result['project_id'] ?>"><button>Edit <?= $result['project_title'] ?></button></a>
+    <a href="home.php"><button>back</button></a>
+<a href="project_delete.php?id=<?= $result['project_id'] ?>"><button>delete <?= $result['project_title'] ?></button></a>
+<a href="project_edit.php?id=<?= $result['project_id'] ?>"><button>edit <?= $result['project_title'] ?></button></a>
 </div> <!-- ferme containerproject -->
 
 <?php
