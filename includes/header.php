@@ -22,7 +22,7 @@
         </div>
         <div>
             <img src="../../assets/icons/opentag.svg" alt="" class='balise1'>
-            <a href="../pages/jslibrary.php">ma librairie JavaScript</a>
+            <a href="../pages/jslibrary.php">ma bibliothèque JavaScript</a>
             <img src="../../assets/icons/closingtag.svg" alt="" class='balise2'>
         </div>
         <div>
@@ -42,7 +42,7 @@
         <a href="../pages/projects.php">projets</a>
     </div>
     <div class='hidden_in_desktop'>
-        <a href="../pages/jslibrary.php">ma librairie JavaScript</a>
+        <a href="../pages/jslibrary.php">ma bibliothèque JavaScript</a>
     </div>
     <div class='hidden_in_desktop'>
         <a href="../pages/articles.php">mes articles</a>

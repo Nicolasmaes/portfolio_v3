@@ -8,8 +8,6 @@ session_start();?>
         </div><!-- ferme about_me -->
         <br><br>
         <div class="about_sports">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed aliquid quam atque quae debitis nam distinctio! Aliquam, voluptate harum, earum vitae suscipit placeat laborum, asperiores mollitia recusandae facilis facere perspiciatis.</p>
-            <p>Quidem inventore, temporibus quae, sequi illo, libero provident animi rem impedit error aperiam voluptate iste nam. Totam vel ad, laudantium illum tempore molestiae modi, porro ducimus nostrum sit vitae ipsa.</p>
         <p>Très sportif, j'essaye chaque année de parcourir plus de kilomètres à pied, en vélo et en natation ! J'ai couru 3 marathons et 1 triathlon jusqu'ici. Vivement la reprise des courses pour se fixer de nouveaux objectifs !</p>
         </div><!-- ferme about_sports -->
 </div><!-- ferme container_about -->
