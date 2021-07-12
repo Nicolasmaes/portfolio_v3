@@ -19,28 +19,26 @@ echo '';
 <div class="slogan" data-aos="fade-up">
 <h2>GET YOUR OWN<br> WEBSITE, SOON.</h2>
 </div>
-<!-- <a href="https://www.instagram.com/coralie.fr17/">
-    <h2>@coraliefr17 sur Instagram</h2>
-    <div class="carousel">
-
-    </a>
-        <div>
-            <img src="1.jpg" alt="">
-        </div>
-        <div>
-            <img src="2.jpeg" alt="">
-        </div>
-        <div>
-            <img src="3.jpg" alt="">
-        </div>
-        <div>
-            <img src="4.jpg" alt="">
-        </div>
-        <div>
-            <img src="5.png" alt="">
-        </div>
+<div>
+    <a href="https://www.instagram.com/coralie.fr17/"><h2>@coralie.fr17 sur Instagram</h2></a>
+</div>
+<div class="coralie_photographs">
+    <div class="coralie_photographs_small_card">
+        <img src="../../assets/pictures/1.jpg" alt="">
     </div>
-    <div class="image_viewer">
+    <div class="coralie_photographs_small_card">
+        <img src="../../assets/pictures/2.jpg" alt="">
+    </div>
+    <div class="coralie_photographs_small_card">
+        <img src="../../assets/pictures/3.jpg" alt="">
+    </div>
+    <div class="coralie_photographs_small_card">
+        <img src="../../assets/pictures/4.jpg" alt="">
+    </div>
+    <div class="coralie_photographs_small_card">
+        <img src="../../assets/pictures/5.jpg" alt="">
+    </div>
+</div>
 
-    </div> -->
+
 <?php include "../../includes/footer.php"; ?>

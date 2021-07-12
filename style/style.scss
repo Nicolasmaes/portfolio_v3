@@ -7,7 +7,7 @@
 $primary_color:#1e4b4b;
 $second_color: #dbf0f0;
 *{
-/*     border: 1px solid grey; */
+    border: 1px solid grey;
     margin: 0;
     padding: 0;
 }
@@ -290,9 +290,13 @@ form{
 .article{
     margin: 0 1rem;
     font-family: 'avenir';
+    display: flex;
+    flex-direction: column;
     img{
-        display: flex;
         justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
     }
     .date{
         text-align: center;
@@ -422,6 +426,10 @@ div{
         height: 100%;
         background-color: #fff;
     }
+}
+.coralie_photographs{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -565,6 +573,10 @@ div{
     }
     .article{
         margin: 0 15%;
+        img {
+            width: 30%;
+            margin: auto;
+        }
         table{
             display: flex;
             justify-content: center;

@@ -5,7 +5,7 @@
   src: url(../assets/fonts/avenir-next/avenirNextLTPro-bold.otf), url(../assets/fonts/avenir-next/avenirNextLTPro-it.otf), url(../assets/fonts/avenir-next/avenirNextLTPro-regular.otf);
 }
 * {
-  /*     border: 1px solid grey; */
+  border: 1px solid grey;
   margin: 0;
   padding: 0;
 }
@@ -301,10 +301,14 @@ form .button #submit {
 .article {
   margin: 0 1rem;
   font-family: "avenir";
+  display: flex;
+  flex-direction: column;
 }
 .article img {
-  display: flex;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
 }
 .article .date {
   text-align: center;
@@ -432,6 +436,11 @@ kbd {
   width: 100%;
   height: 100%;
   background-color: #fff;
+}
+
+.coralie_photographs {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 @media screen and (min-width: 768px) {
@@ -572,6 +581,10 @@ kbd {
 
   .article {
     margin: 0 15%;
+  }
+  .article img {
+    width: 30%;
+    margin: auto;
   }
   .article table {
     display: flex;
