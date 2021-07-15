@@ -137,12 +137,19 @@ footer a {
       } */
 }
 
-.link_insta_coralie {
+.link_insta {
+  margin: 1rem 0;
+}
+.link_insta .link_insta_coralie {
+  margin-top: 200px;
   text-decoration: none;
   color: #1e4b4b;
 }
-.link_insta_coralie h2 {
+.link_insta .link_insta_coralie h2 {
   font-size: 2rem;
+}
+.link_insta .link_insta_coralie h2 img {
+  width: 2rem;
 }
 
 .thumbnail_first {

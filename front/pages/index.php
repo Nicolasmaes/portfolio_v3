@@ -19,8 +19,8 @@ echo '';
 <div class="slogan" data-aos="fade-up">
 <h2>GET YOUR OWN<br> WEBSITE, SOON.</h2>
 </div>
-<div>
-    <a href="https://www.instagram.com/coralie.fr17/" class="link_insta_coralie"><h2>@coralie.fr17 sur Instagram</h2></a>
+<div class="link_insta">
+    <a href="https://www.instagram.com/coralie.fr17/" class="link_insta_coralie"><h2>@coralie.fr17  <img src="../../assets/icons/instagram.svg" alt=""></h2></a>
 </div>
 <div class="slideshow-container">
 

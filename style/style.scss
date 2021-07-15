@@ -128,13 +128,21 @@ footer{
         font-size: clamp(1rem, 10%, 5rem);
     } */
 }
-.link_insta_coralie{
-    text-decoration: none;
-    color:$primary_color;
-    h2{
-        font-size: 2rem;
+.link_insta{
+    margin: 1rem 0;
+    .link_insta_coralie{
+        margin-top: 200px;
+        text-decoration: none;
+        color:$primary_color;
+        h2{
+            font-size: 2rem;
+            img{
+                width: 2rem;
+            }
+        }
     }
 }
+
 .thumbnail_first{
     display: flex;
     justify-content: center;
