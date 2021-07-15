@@ -7,7 +7,7 @@
 $primary_color:#1e4b4b;
 $second_color: #dbf0f0;
 *{
-    border: 1px solid grey;
+/*     border: 1px solid grey; */
     margin: 0;
     padding: 0;
 }
@@ -127,6 +127,13 @@ footer{
 /*     h2{
         font-size: clamp(1rem, 10%, 5rem);
     } */
+}
+.link_insta_coralie{
+    text-decoration: none;
+    color:$primary_color;
+    h2{
+        font-size: 2rem;
+    }
 }
 .thumbnail_first{
     display: flex;
@@ -430,6 +437,7 @@ div{
 .coralie_photographs{
     display: flex;
     flex-wrap: wrap;
+    
 }
 
 

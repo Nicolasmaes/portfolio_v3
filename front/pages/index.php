@@ -20,25 +20,50 @@ echo '';
 <h2>GET YOUR OWN<br> WEBSITE, SOON.</h2>
 </div>
 <div>
-    <a href="https://www.instagram.com/coralie.fr17/"><h2>@coralie.fr17 sur Instagram</h2></a>
+    <a href="https://www.instagram.com/coralie.fr17/" class="link_insta_coralie"><h2>@coralie.fr17 sur Instagram</h2></a>
 </div>
-<div class="coralie_photographs">
-    <div class="coralie_photographs_small_card">
-        <img src="../../assets/pictures/1.jpg" alt="">
-    </div>
-    <div class="coralie_photographs_small_card">
-        <img src="../../assets/pictures/2.jpg" alt="">
-    </div>
-    <div class="coralie_photographs_small_card">
-        <img src="../../assets/pictures/3.jpg" alt="">
-    </div>
-    <div class="coralie_photographs_small_card">
-        <img src="../../assets/pictures/4.jpg" alt="">
-    </div>
-    <div class="coralie_photographs_small_card">
-        <img src="../../assets/pictures/5.jpg" alt="">
-    </div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="../../assets/pictures/1.jpg" style="width:100%">
+  <div class="text"></div>
 </div>
 
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="../../assets/pictures/2.png" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="../../assets/pictures/3.png" style="width:100%">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="../../assets/pictures/4.png" style="width:100%">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="../../assets/pictures/5.png" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+</div>
 
 <?php include "../../includes/footer.php"; ?>
