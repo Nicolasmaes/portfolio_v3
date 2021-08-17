@@ -26,7 +26,7 @@ echo '';
 
 <div class="mySlides fade">
   <div class="numbertext"></div>
-  <img src="../../assets/pictures/1.jpg" style="width:100%">
+  <img src="../../assets/pictures/1.png" style="width:100%">
   <div class="text"></div>
 </div>
 
@@ -48,7 +48,7 @@ echo '';
 </div>
 <div class="mySlides fade">
   <div class="numbertext"></div>
-  <img src="../../assets/pictures/5.png" style="width:100%">
+  <img src="../../assets/pictures/5.jpg" style="width:100%">
   <div class="text"></div>
 </div>
 

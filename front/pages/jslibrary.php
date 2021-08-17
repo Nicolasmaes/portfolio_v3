@@ -1,6 +1,10 @@
 <?php include "../../includes/header.php";
 session_start();?>
 <div class="embed_collection">
+<h2 data-aos="fade-up">Loading wheel</h2>
+<embed src="../../assets/javascript/defi-16-08_wheel/" type="" data-aos="fade-up">
+<h2 data-aos="fade-up">Title animation</h2>
+<embed src="../../assets/javascript/defi-17-08_anim-title/" type="" data-aos="fade-up">
 <h2 data-aos="fade-up">Color Square Changing</h2>
 <embed src="../../assets/javascript/1-color-square-changing/" type="" data-aos="fade-up">
 <h2 data-aos="fade-up">fizzBuzz</h2>

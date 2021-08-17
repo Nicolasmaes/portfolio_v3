@@ -9,6 +9,10 @@
   margin: 0;
   padding: 0;
 }
+*::selection{
+  background-color: #1e4b4b;
+  color: white;
+}
 
 /* width */
 ::-webkit-scrollbar {
@@ -150,6 +154,10 @@ footer a {
 }
 .link_insta .link_insta_coralie h2 img {
   width: 2rem;
+}
+
+.slideshow-container {
+  margin: 2rem 0;
 }
 
 .thumbnail_first {

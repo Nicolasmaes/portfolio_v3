@@ -70,19 +70,19 @@ include "../includes_back/header.php";
 <br>
 <br>
     <form action="project_pictures_edit_form_handler.php" method="post" enctype="multipart/form-data"> <!-- pour envoyer plusieurs formats dans ce formulaire -->
-    <div class="dossier_de_conception">
+<!--     <div class="dossier_de_conception">
         <label for="input_design_brief">Design brief</label>
         <input type='file' id="input_design_brief" name="project_design_file" value="<?= $result['project_id'] ?>">
-    </div>
+    </div> -->
     <div class="screenshots_gallery">
         <label for="input_picture">Picture</label>
         <input type="file" id="input_picture" name="project_picture" value="<?= $result['project_picture'] ?>">
     </div>
     </div>
-            <div class="favicon">
+<!--             <div class="favicon">
                 <label for="input_favicon">Favicon</label>
                 <input type="file" id="input_favicon" name="project_favicon"  value="<?= $result['project_facivon'] ?>">
-            </div>
+            </div> -->
     <div class="button">
         <button type="reset">Reinitialize</button><br>
         <input type="submit" id="submit" value="Send"></input>

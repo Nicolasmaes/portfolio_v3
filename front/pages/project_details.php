@@ -62,7 +62,7 @@ session_start();
     </div>
 
 <!--     <div class="single_project_links" > -->
-        <div class="project_link_github">
+        <div class="project_link_github" data-aos="fade-up">
             <a target="_blank" href="<?= $result['project_link_github'] ?>">
                 <h2>dépôt du projet sur GitHub &#8594</h2>
             </a>
