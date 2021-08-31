@@ -88,7 +88,8 @@ if($_SESSION['username']){
                     $picture = basename( $_FILES["project_picture"]["name"]) ;
     
                     $sql = "INSERT INTO projects(project_picture, project_title, project_begin
-                    , project_end, project_technologies,project_coworkers, project_context, project_specs, project_link_github, project_link_website) VALUES (:project_picture, :project_title,:project_begin,:project_end,:project_technologies,:project_context,:project_specs,:project_coworkers,:project_link_github,:project_link_website)";
+                    , project_end, project_technologies,project_coworkers, project_context, project_specs, project_link_github, project_link_website)
+                    VALUES (:project_picture, :project_title,:project_begin,:project_end,:project_technologies,:project_coworkers,:project_context,:project_specs,:project_link_github,:project_link_website)";
                     $query = $db->prepare($sql);
                     $query->bindValue(':project_title', $title, PDO::PARAM_STR);
                     $query->bindValue(':project_picture', $picture, PDO::PARAM_STR);
