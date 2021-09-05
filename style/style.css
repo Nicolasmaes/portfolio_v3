@@ -9,10 +9,6 @@
   margin: 0;
   padding: 0;
 }
-*::selection{
-  background-color: #1e4b4b;
-  color: white;
-}
 
 /* width */
 ::-webkit-scrollbar {
