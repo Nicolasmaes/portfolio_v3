@@ -25,9 +25,9 @@ include "../includes_back/header.php";
 <div class="option_container">
     <div class="options">
         <a href="add_form.php"><button><img src="../assets/icons/add.png" alt="logo edit"></button></a>
-        <a href="project_edit.php"><button><img src="../assets/icons/edit.png" alt="logo edit"></button></a>
+<!--         <a href="project_edit.php"><button><img src="../assets/icons/edit.png" alt="logo edit"></button></a>
         <a href="project_delete.php"><button><img src="../assets/icons/delete.png" alt="logo edit"></button></a>
-        <a href="#"><button><img src="../assets/icons/hide.png" alt="logo edit"></button></a>
+        <a href="#"><button><img src="../assets/icons/hide.png" alt="logo edit"></button></a> -->
     </div><!-- ferme options -->
     <table>
         <tr><th></th><th>favicon</th><th>nom du projet</th><th>vues</th><th>date d'ajout</th></tr>
