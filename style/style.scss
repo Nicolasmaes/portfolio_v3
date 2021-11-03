@@ -306,7 +306,7 @@ form{
     }
 }
 .article{
-    margin: 0 1rem;
+    margin: 1rem;
     font-family: 'avenir';
     display: flex;
     flex-direction: column;
@@ -330,6 +330,78 @@ form{
         color:$primary_color;
     }
     .article__group{
+        p{
+            .bold{
+                font-size: 1rem;
+                color:$primary_color;
+            }
+        }
+        table{
+            /* border: 1px solid $primary_color; */
+            border-collapse: collapse;
+            th{
+                border: 1px solid $primary_color;
+                padding: 0 8px;
+            }
+            td{
+                border: 1px solid $primary_color;
+                padding: 0.5rem;
+            }
+            td:nth-child(even) 
+            {
+                text-align: center;
+            }
+            td:nth-child(odd) 
+            {
+                padding-left: 4px;
+            }
+        }
+        .bold{
+            font-size: 1rem;
+            color:$primary_color;
+            margin: 1rem;
+            .space{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        h2{
+            border:none;
+            text-align: left;
+        }
+        a{
+            display: flex;
+            text-decoration: none;
+            color:$primary_color;
+            font-family: 'avenir';
+        }
+    }
+}
+.article_about{
+    margin: 1rem;
+    font-family: 'avenir';
+    display: flex;
+    flex-direction: column;
+    img{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+    .date{
+        text-align: center;
+    }
+    h1{
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    h2{
+        font-size: 1.5rem;
+        border: 1px solid $primary_color;
+        margin: 1rem 0;
+        color:$primary_color;
+    }
+    .article_about__group{
         p{
             .bold{
                 font-size: 1rem;

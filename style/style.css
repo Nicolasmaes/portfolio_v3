@@ -62,6 +62,7 @@ header #hamb_menu_btn .barre {
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
+  position: -webkit-sticky;
   position: sticky;
   top: 0px;
   height: 50%;
@@ -318,7 +319,7 @@ form .button #submit {
 }
 
 .article {
-  margin: 0 1rem;
+  margin: 1rem;
   font-family: "avenir";
   display: flex;
   flex-direction: column;
@@ -378,6 +379,73 @@ form .button #submit {
   text-align: left;
 }
 .article .article__group a {
+  display: flex;
+  text-decoration: none;
+  color: #1e4b4b;
+  font-family: "avenir";
+}
+
+.article_about {
+  margin: 1rem;
+  font-family: "avenir";
+  display: flex;
+  flex-direction: column;
+}
+.article_about img {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+.article_about .date {
+  text-align: center;
+}
+.article_about h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.article_about h2 {
+  font-size: 1.5rem;
+  border: 1px solid #1e4b4b;
+  margin: 1rem 0;
+  color: #1e4b4b;
+}
+.article_about .article_about__group p .bold {
+  font-size: 1rem;
+  color: #1e4b4b;
+}
+.article_about .article_about__group table {
+  /* border: 1px solid $primary_color; */
+  border-collapse: collapse;
+}
+.article_about .article_about__group table th {
+  border: 1px solid #1e4b4b;
+  padding: 0 8px;
+}
+.article_about .article_about__group table td {
+  border: 1px solid #1e4b4b;
+  padding: 0.5rem;
+}
+.article_about .article_about__group table td:nth-child(even) {
+  text-align: center;
+}
+.article_about .article_about__group table td:nth-child(odd) {
+  padding-left: 4px;
+}
+.article_about .article_about__group .bold {
+  font-size: 1rem;
+  color: #1e4b4b;
+  margin: 1rem;
+}
+.article_about .article_about__group .bold .space {
+  display: flex;
+  flex-direction: column;
+}
+.article_about .article_about__group h2 {
+  border: none;
+  text-align: left;
+}
+.article_about .article_about__group a {
   display: flex;
   text-decoration: none;
   color: #1e4b4b;
