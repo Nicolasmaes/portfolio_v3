@@ -224,7 +224,7 @@ footer{
             border-radius: 5px;
         }
         img{
-            width: 1.5rem;
+            width: 2rem;
             padding: 0.1rem 0.5rem;
         }
     }
@@ -683,6 +683,9 @@ div{
             border:2px solid $primary_color;
             margin-bottom: 1rem;
         }
+    }
+    .version_un_du_site{
+        height: 100vh;
     }
     .container_single_project{
         margin: 0 15%; 

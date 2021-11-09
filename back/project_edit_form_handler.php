@@ -9,8 +9,6 @@ if ($_SESSION['username']) {
             isset($_POST['project_begin']) && !empty($_POST['project_begin']) &&
             isset($_POST['project_end']) && !empty($_POST['project_end']) &&
             isset($_POST['project_technologies']) && !empty($_POST['project_technologies']) &&
-            isset($_POST['project_link_website']) && !empty($_POST['project_link_website']) &&
-            isset($_POST['project_link_github']) && !empty($_POST['project_link_github']) &&
             isset($_POST['project_coworkers']) && !empty($_POST['project_coworkers']) &&
             isset($_POST['project_context']) && !empty($_POST['project_context']) &&
             isset($_POST['project_specs']) && !empty($_POST['project_specs'])

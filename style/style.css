@@ -238,7 +238,7 @@ footer a {
   border-radius: 5px;
 }
 .option_container .options img {
-  width: 1.5rem;
+  width: 2rem;
   padding: 0.1rem 0.5rem;
 }
 .option_container table {
@@ -688,6 +688,10 @@ kbd {
     justify-content: center;
     border: 2px solid #1e4b4b;
     margin-bottom: 1rem;
+  }
+
+  .version_un_du_site {
+    height: 100vh;
   }
 
   .container_single_project {

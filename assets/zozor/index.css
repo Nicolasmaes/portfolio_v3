@@ -1,0 +1,255 @@
+/* Définition des polices personnalisées */
+
+@font-face
+{
+    font-family: 'BallparkWeiner';
+    src: url('polices/ballpark.eot');
+    src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
+         url('polices/ballpark.woff') format('woff'),
+         url('polices/ballpark.ttf') format('truetype'),
+         url('polices/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Dayrom';
+    src: url('polices/dayrom.eot');
+    src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('polices/dayrom.woff') format('woff'),
+         url('polices/dayrom.ttf') format('truetype'),
+         url('polices/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+#bloc_page{
+    width: 900px;
+    margin: auto;
+}
+body{
+    background: url("images/fond_jaune.png");
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #181818;
+}
+section h1, footer h1, nav a{
+    font-family: Dayrom, serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+header{
+    display: flex;
+    background: url('images/separateur.png') repeat-x bottom;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+#titre_principal{
+    display: flex;
+    flex-direction: column;
+}
+#titre_principal h1{
+    font-family: BallparkWeiner, serif;
+    font-size: 2.5em;
+    margin: 0 0 0 10px;
+}
+#logo{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+#logo img{
+    width: 59px;
+    height: 60px;
+}
+header h2{
+    font-family: Dayrom, serif;
+    font-size: 1.1em;
+    margin-top: 0px;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+nav li{
+    margin: 15px;
+}
+nav a{
+    color: #181818;
+    text-decoration: none;
+    font-size: 1.3em;
+    padding-bottom: 2px;
+    transition: 0.5s;
+    border-bottom: 3px solid transparent;
+}
+nav a:hover{
+    color: #760001;
+    border-bottom: 4px solid #760001;
+    transition: 0.2s;
+
+}
+#banner{
+    background: url("images/sanfrancisco.jpg") no-repeat;
+    height: 200px;
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 40px #1C1A19;
+    display: flex;
+    align-items: flex-end;
+}
+#textbanner{
+    /*position: absolute;
+    bottom: 0px;*/
+    border-radius: 0px 0px 5px 5px;*/
+    height: 25%;
+    padding: 0px 10px;
+    background-color: rgba(24,24,24,0.8);
+    color: white;
+    font-size: 1em;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex: 1;
+    height: 50px;
+}
+#boutonrouge{
+    display: flex;
+    text-decoration: none;
+    background-image: linear-gradient(to top, #701010, #FBBCB5);
+    color: white;
+    height: 35px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #701010;
+    padding: 0px 8px;
+    transition: 0.3s;
+}
+#boutonrouge img{
+    padding: 0px 5px;
+}
+#boutonrouge:hover{
+        background-image: linear-gradient(to right, #701010, #FBBCB5);
+        border: 1px solid #FBBCB5;
+        transition: 0.3s;
+}
+section{
+    display: flex;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+#epingle{
+    vertical-align: middle;
+    margin-right: 8px;
+}
+section h1{
+    font-size: 1.3em;
+}
+article{
+    flex: 2;
+}
+article p{
+    font-size: 0.8em;
+}
+article p, aside p{
+    text-align: justify;
+}
+aside{
+    background-color: rgb(112,107,100);
+    flex: 1;
+    color: white;
+    border-radius: 5px;
+    padding: 0px 10px;
+    margin-left: 10px;
+    text-align: center;
+    position: relative;
+}
+#zozor{
+    border: 1px solid #181818;
+}
+#fleche{
+    position: relative;
+    right: 83px;
+}
+#reseaux{
+    display: flex;
+    position: relative;
+    top: 5px;
+    justify-content: space-around;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    background: url('images/ico_top.png') no-repeat top, url('images/separateur.png') repeat-x top;
+    padding-top: 20px;
+}
+footer h1{
+    font-size: 1.2em;
+}
+#tweeter{
+    flex: 1;
+}
+#photos{
+    flex: 1;
+}
+#photos2{
+    display: flex;
+    justify-content: center;
+}
+#photos img{
+    border: 1px solid black;
+    margin: 0px 3px;
+}
+#listes{
+    display: flex;
+    flex: 1;
+}
+#listes ul{
+    list-style-image: url('images/ico_liensexterne.png');
+}
+#listes a{
+    text-decoration: none;
+    color: #760001;
+}
+#listes a:hover{
+    text-decoration: underline;
+}
+@media screen and (max-width:1024px)
+{
+    #banner{
+        display: none;
+    }
+    #bloc_page{
+        width: auto;
+    }
+    section{
+        flex-direction: column;
+    }
+    #zozor{
+        float: right;
+        margin-left: 10px;
+    }
+    #fleche{
+        transform: rotate(90deg);
+        position: absolute;
+        top:-13px;
+        left:400px;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    nav li{
+        margin: 1px;
+    }
+    nav a:hover{
+        border-bottom: transparent;
+        color: #181818;
+    }
+    #reseaux{
+        justify-content: center;
+    }
+    #reseaux img{
+        margin: 5px;
+    }
+}
